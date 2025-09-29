@@ -1,0 +1,21 @@
+div{
+    height:200px;
+    width:200px;
+    border:10px solid red;
+    border-radius: 50%;
+    border-top: 10px solid black;
+    animation: spinanimate 5s steps(10) 0s infinite normal;
+}
+.div1{
+    text-align:center;
+    margin-top: 20px;
+}
+@keyframes spinanimate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+
+}
