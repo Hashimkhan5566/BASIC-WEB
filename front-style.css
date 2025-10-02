@@ -1,26 +1,55 @@
-/* div {
-  border: 2px solid red;
+/* form{
+  height: 250px;
+  width:180px;
+  border: 5px solid black;
+  border-radius: 1px;
+  margin-left: 700px;
+  margin-top: 250px;
+  /* animation: borderChange 2s ease-in-out 0s infinite alternate; */
+
+
+ /* background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(0deg, red, blue, green, orange, red) border-box;
+
+  animation: spinColors 3s linear infinite;
+}
+
+@keyframes spinColors {
+  to {
+    background: 
+      linear-gradient(white, white) padding-box,
+      linear-gradient(360deg, red, blue, green, orange, red) border-box;
+  }
+} */ 
+form {
+  height: 250px;
+  width: 180px;
+  margin-left: 700px;
+  margin-top: 250px;
+  position: relative;
   border-radius: 10px;
-  margin-bottom: 200px;
+  background: white; /* inside color */
 }
 
-nav ul {
-  list-style: none;
-  display: flex;              /* row layout */
-  align-items: left;        /* center vertically */
-  justify-content: left;
-  padding: 10px 20px;
-  margin: 0;
-  width: 100px;                /* full width bar */
+/* border effect */
+form::before {
+  content: "";
+  position: absolute;
+  inset: -5px; /* space for border */
+  border-radius: 12px;
+  padding: 5px;
+  background: conic-gradient(red, blue, green, orange, red);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: spinColors 3s linear infinite;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  padding: 5px 10px;
+@keyframes spinColors {
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-nav ul li a:hover {
-  color: blue;
-} */
