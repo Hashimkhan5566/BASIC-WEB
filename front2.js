@@ -122,3 +122,50 @@ let a2 =arr23.filter((a)=>{
   
 })
 console.log(a2);
+
+// alert and prompt and confirm
+
+let dog  = prompt("enter the dog name:");
+let cat = prompt("big_cat");
+
+console.log(alert(cat,dog));
+if(cat&&dog!==true){
+  console.log(confirm("you give the correct:"));
+}
+console.log(document.body.firstChild);
+// A number is given: n = 121. How do you check if it is a palindrome (same forward and backward)?
+let numbar = prompt("enter your choice palindrome:");
+
+let original = parseInt(numbar);
+let reverse = 0;
+
+while(numbar>0){
+  let digit = numbar%10;
+  reverse = reverse*10+digit;
+  numbar= Math.floor(numbar/10);
+}
+if(reverse===original){
+  console.log("this is palidrome");
+}
+else{
+  console.log("this is not palindrome");
+}
+//parent, sibling, child, element
+console.log(document.body.parentNode);
+console.log(document.body.style.backgroundColor);
+console.log(document.body.lastChild);
+console.log(document.body.firstChild);// we done today the dom like how to access to child , parent, sibling
+console.log(document.body.childNodes);
+console.log(document.body.firstElementChild);
+// console.log(document.body.elementChild-length);
+// console.log(document.script.rightSibling);
+// console.log(document.p.nextElementSibling);
+
+// let t = document.body.firstElementChild.firstElementChild;
+// console.log
+let id = document.getElementById("id");
+let span =document.getElementById("span1"); 
+console.log(span.closest("#span1"));
+console.log(id);
+console.log(id.matches(".box"));
+console.log(span.contains(id));
