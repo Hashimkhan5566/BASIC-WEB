@@ -157,15 +157,22 @@ console.log(document.body.lastChild);
 console.log(document.body.firstChild);// we done today the dom like how to access to child , parent, sibling
 console.log(document.body.childNodes);
 console.log(document.body.firstElementChild);
-// console.log(document.body.elementChild-length);
-// console.log(document.script.rightSibling);
-// console.log(document.p.nextElementSibling);
-
-// let t = document.body.firstElementChild.firstElementChild;
-// console.log
 let id = document.getElementById("id");
+console.log(id.setAttribute("class", "true sachin"));
 let span =document.getElementById("span1"); 
+console.log(span.getAttribute("class"));
+console.log(span.hasAttribute("class"));
+console.log(span.setAttribute("class", "true sachin"));
+
+console.log(span.removeAttribute("class"));
+let p1 =  document.getElementsByClassName("class")[0];
+console.log(p1.innerHTML);
+console.log(p1.outerHTML);
 console.log(span.closest("#span1"));
-console.log(id);
+console.log(document.body.firstElementChild.nodeName);
+console.log(id.dataset);
+
 console.log(id.matches(".box"));
 console.log(span.contains(id));
+console.log(id.attributes);
+console.log(id.dataset);
