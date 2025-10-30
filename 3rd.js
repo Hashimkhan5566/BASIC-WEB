@@ -61,7 +61,7 @@ setTimeout(()=>{
   resolve(true);
 }, 5000);
 })
-let p2 = new Promise((resolve, reject)=>{
+let pe = new Promise((resolve, reject)=>{
 
 setTimeout(()=>{
   console.log("the promise is rejected");
@@ -74,7 +74,7 @@ setTimeout(()=>{
 p.then((value) => {
   console.log("the resolve.");
 })
-p2.catch((err) => {
+pe.catch((err) => {
   console.log("the error occur due to the some reason");
   
 });
@@ -104,7 +104,7 @@ p2.catch((err) => {
 //    console.log("the error occur due to the some mistake!!!");
 // })
 
-//we used the loadscript
+//we used the loadscript.
 
 const loadScript = (src)=>{
   return new Promise ((resolve, reject) =>{
@@ -122,8 +122,8 @@ const loadScript = (src)=>{
 
   
 }
-let p1 = loadScript("	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js");
-p1.then((value)=>{
+let pl = loadScript("	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js");
+pl.then((value)=>{
   console.log(value);
 }).then((value)=>{
  console.log("the value is this  print.");
@@ -150,3 +150,52 @@ P.then((value)=>{
 }).then((value)=>{
   console.log("the harrry.");
 })
+
+let p1 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("value 1 done");
+  },1000);
+});
+
+let p2 = new Promise((resolve, reject)=>{
+   setTimeout(()=>{
+    resolve("value 2 done");
+   },2000);
+});
+
+let p3 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("value 2 done");
+  },2000);
+});
+
+let p4 = Promise.all([p1,p2,p3]);
+
+p4.then((value)=>{
+  console.log(value);
+});
+let p5 = Promise.race([p1,p2,p3]);
+
+p5.then((value)=>{
+  console.log(value);
+});
+let p6 = Promise.any([p1,p2,p3]);
+
+p6.then((value)=>{
+  console.log(value);
+});
+let p7 = Promise.resolve([p1,p2,p3]);
+
+p7.then((value)=>{
+  console.log(value);
+});
+let p8 = Promise.reject([p1,p2,p3]);
+
+p8.then((value)=>{
+  console.log(value);
+});
+let p9 = Promise.allSettled([p1,p2,p3]);
+
+p9.then((value)=>{
+  console.log(value);
+});
