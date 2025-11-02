@@ -203,68 +203,377 @@
 
 //async and await
 
-async function harry() {
+// async function harry() {
   
-  let lahorweather =  new Promise((resolve, reject)=>{
-    setTimeout(()=>{
+//   let lahorweather =  new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
        
-      resolve("27 deg");
-    },2000);
-  })
-  let islamabadweather = new Promise((resolve, reject)=>{
+//       resolve("27 deg");
+//     },2000);
+//   })
+//   let islamabadweather = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("21deg");
+//     }, 3000);
+//   })
+
+//   let lahoreW = await lahorweather;
+//   let islamabadW = await islamabadweather;
+
+//   return[lahoreW, islamabadW];
+// }
+// console.log("welcome to he control room");
+// let a = harry();
+// console.log(a);
+
+
+// //try and catch
+
+// setTimeout(()=>{
+//   console.log("hackinng the file.........");
+// },1000);
+// setTimeout(()=>{
+//   console.log("then username cracked.....");
+// },2000);
+// try{
+// console.log(rahul);
+// }
+// catch(err){
+//   console.log("bubble bubbble", err);
+// }
+
+// setTimeout(()=>{
+//   console.log("the file name scratch......");
+// },3000);
+
+// setTimeout(()=>{
+//   console.log("the passward is hacked.....");
+// },4000);
+
+// setTimeout(()=>{
+//   console.log("then all file is kacked and email must cracked....... ");
+// },5000);
+
+// //try and catch with message and name of error.
+
+// try{
+//   let age = prompt("your age is:..");
+//   let age1 = parseInt(age);
+//   if(age1>102){
+//   throw new ReferenceError("this is probably error and invalid age.");
+// }
+// }
+// catch(err){
+//   console.log(err.name);
+//   console.log(err.message);
+//   console.log(err.stack);
+
+
+// Question 1 — Weather Control Room
+
+// Write an async function named getWeather() that:
+
+// Creates two promises lahoreWeather (resolve after 2 sec: "30°C") and karachiWeather (resolve after 4 sec: "35°C").
+
+// Use await to get both results and print them together in console.
+
+// Use a try...catch block to handle any error.
+
+// Add a finally block that prints "Weather data fetched successfully!".
+
+async function getWeather() {
+  let lahoreWeather = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-      resolve("21deg");
-    }, 3000);
-  })
+      resolve("32C");
+    },1000);
+  });
 
-  let lahoreW = await lahorweather;
-  let islamabadW = await islamabadweather;
+  try{
+    console.log("to handle the error.");
 
-  return[lahoreW, islamabadW];
+  }
+  catch(err){
+    console.log("the lahoreWeather is 32C.")
+  }
+
+  let karachiWeather = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("35C");
+    },4000);
+  });
+  try{
+    console.log("to handle the error.");
+
+  }
+  catch(err){
+    console.log("the lahoreWeather is 32C.")
+  }
+  finally{
+    console.log("the are good weather in karachi and lahore.");
+  }
+
+  let lahoreW = await lahoreWeather;
+  let karachiW = await karachiWeather;
+  return[lahoreW, karachiW];
+
 }
-console.log("welcome to he control room");
-let a = harry();
+
+let fun = getWeather();
+console.log(fun);
+
+// Question 2 — Promise Race
+
+// Create three promises:
+// 1️⃣ resolves after 1s → "First done"
+// 2️⃣ resolves after 3s → "Second done"
+// 3️⃣ rejects after 2s → "Error occurred!"
+// Use Promise.race() and log whichever promise resolves/rejects first.
+// Handle error with .catch().
+
+let p1 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("first done.");
+  }, 1000);
+});
+
+let p2 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("second done.");
+  },3000);
+});
+
+let p3 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("error occurred");
+
+  },2000);
+});
+
+let p4 = Promise.race([p1,p2,p3]);
+p4.then((value)=>{
+  console.log(value);
+p4.catch((err)=>{             //first done. this is output.
+  console.log("to handle the error...");
+});
+});
+// Question 3 — Promise.allSettled
+
+// Make an array of three promises:
+
+// Two that resolve
+
+// One that rejects
+// Use Promise.allSettled() to print the status and value of all promises.
+
+let p6 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("the p6 is resolve");
+  },1000);
+
+})
+let p7 = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("the p7 is resolve.");
+  },2000);
+});
+
+let p8 = new Promise((resolve,  reject)=>{
+  setTimeout(()=>{
+    reject("the last one is reject.");
+  },3000);
+});
+
+let p9 = Promise.allSettled([p6,p7,p8]);
+p9.then((value)=>{
+  console.log(value);
+});
+
+// Question 4 — Custom Error
+
+// Inside a function validateUser(name),
+
+// If name is empty string "", throw a new Error "Username cannot be empty!".
+
+// If name length < 3, throw a new Error "Username too short!".
+
+// Else print "Welcome, name!".
+// Wrap the function call in try...catch and handle both errors.
+// Always print "Validation complete" in finally.
+  function validateUser(){
+    let name = prompt("enter your age:");
+   if(name==""){
+      try{
+        console.log("the name is full...");
+         throw new Error ("the username is empty... try again...");
+      }
+      catch(err){
+         console.log("your length of name is too short! becausethis this reason error...");
+         console.log(err.message);
+      }
+    }
+    else if(name.length<=4){
+      throw new Error ("the username is too short!...");
+    }
+    else{
+      console.log("the age is less than of 200.");
+    }
+}
+
+let a = validateUser();
 console.log(a);
 
+// Question 5 — Simulate Hacking Progress (Async Challenge)
 
-//try and catch
+// Create an async function that shows fake hacking steps one after another using await and setTimeout inside a Promise:
 
-setTimeout(()=>{
-  console.log("hackinng the file.........");
-},1000);
-setTimeout(()=>{
-  console.log("then username cracked.....");
-},2000);
+// "Initializing hack..." (1 sec)
+
+// "Connecting to server..." (2 sec)
+
+// "Fetching data..." (2 sec)
+
+// "Hack complete!" (1 sec)
+// Handle any error using try...catch.
+
+async function hacking(){
+  let first = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      console.log("initializing hack....");
+      resolve("initializing hack....");
+    },1000);
+
+  });
+
+  let second  = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      console.log("connecting to the server....");
+      resolve("connecting to the server....");
+    },2000);
+   
+  });
+
+  let third = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      console.log("Fetching data.....");
+      resolve("Fetching data.....");
+    },3000);
+   
+
+  });
+
+  let fourth = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      console.log("Hack complete!");
+      resolve("Hack complete!");
+    }, 1000);
+   
+  });
+
+  let a = await first;
+  let b = await second;
+  let c = await third;
+  let d = await fourth;
+
+  return([a,b,c,d]);
+
+
+}
+hacking();
+
+// Question 6 — Error in Async Function
+
+// Make an async function that fetches data from an invalid URL using fetch().
+// Use try...catch to handle the error and print a custom message like "Cannot fetch data, please check the URL.".
+// Create three async functions:
+
+// getUser() → returns "User Data" after 2 sec
+
+// getPosts() → returns "User Posts" after 3 sec
+
+// getComments() → returns "User Comments" after 1 sec
+// Use Promise.all() to wait for all of them and print results together.
+
+async function getUser(){
+  let po1 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("user Data.")
+    }, 2000);
+  });
+
+  return await po1;
+
+}
+getUser();
+
+async function getPosts(){
+  let po2 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("user Post");
+    }, 3000);
+  });
+
+  return await po2;
+}
+getPosts();
+
+async function getComments(){
+  let po3 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("get comments--");
+    },1000);
+  });
+
+  return await po3
+}
+getComments();
+
+let po5 = Promise.all([getUser(), getComments(),getPosts()]);
+
+po5.then((value)=>{
+  console.log(value);
+});
+
+// Question 8 — Custom Reference Error
+
+// Inside a try block, use throw new ReferenceError("Variable not found!").
+// Catch and print both err.name and err.message.
+// Add a finally that prints "Execution Finished!".
+function trycatch(){
 try{
-console.log(rahul);
+  a =10;
+  console.log("this is a try block");
+  throw new ReferenceError("variable not found!");
 }
 catch(err){
-  console.log("bubble bubbble", err);
-}
-
-setTimeout(()=>{
-  console.log("the file name scratch......");
-},3000);
-
-setTimeout(()=>{
-  console.log("the passward is hacked.....");
-},4000);
-
-setTimeout(()=>{
-  console.log("then all file is kacked and email must cracked....... ");
-},5000);
-
-//try and catch with message and name of error.
-
-try{
-  let age = prompt("your age is:..");
-  let age1 = parseInt(age);
-  if(age1>102){
-  throw new ReferenceError("this is probably error and invalid age.");
-}
-}
-catch(err){
-  console.log(err.name);
   console.log(err.message);
-  console.log(err.stack);
+  console.log(err.name);
 }
+
+finally{
+  console.log("Execution is finished!");
+}
+}
+trycatch();
+
+
+// Question 9 — Async with Rejected Promise
+
+// Create a promise that rejects after 2 sec with message "Server down!".
+// Handle it inside an async function using try...catch.
+
+async function reject(){
+  let re =  new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+     reject("server down!");
+    },2000);
+  });
+  try{
+  
+  return await re; 
+  }
+  catch(err){
+    console.log("the server is down.");
+    console.log(err.message);
+  }
+}
+reject();
