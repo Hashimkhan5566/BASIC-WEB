@@ -281,45 +281,45 @@
 
 // Add a finally block that prints "Weather data fetched successfully!".
 
-async function getWeather() {
-  let lahoreWeather = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      resolve("32C");
-    },1000);
-  });
+// async function getWeather() {
+//   let lahoreWeather = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("32C");
+//     },1000);
+//   });
 
-  try{
-    console.log("to handle the error.");
+//   try{
+//     console.log("to handle the error.");
 
-  }
-  catch(err){
-    console.log("the lahoreWeather is 32C.")
-  }
+//   }
+//   catch(err){
+//     console.log("the lahoreWeather is 32C.")
+//   }
 
-  let karachiWeather = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      resolve("35C");
-    },4000);
-  });
-  try{
-    console.log("to handle the error.");
+//   let karachiWeather = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("35C");
+//     },4000);
+//   });
+//   try{
+//     console.log("to handle the error.");
 
-  }
-  catch(err){
-    console.log("the lahoreWeather is 32C.")
-  }
-  finally{
-    console.log("the are good weather in karachi and lahore.");
-  }
+//   }
+//   catch(err){
+//     console.log("the lahoreWeather is 32C.")
+//   }
+//   finally{
+//     console.log("the are good weather in karachi and lahore.");
+//   }
 
-  let lahoreW = await lahoreWeather;
-  let karachiW = await karachiWeather;
-  return[lahoreW, karachiW];
+//   let lahoreW = await lahoreWeather;
+//   let karachiW = await karachiWeather;
+//   return[lahoreW, karachiW];
 
-}
+// }
 
-let fun = getWeather();
-console.log(fun);
+// let fun = getWeather();
+// console.log(fun);
 
 // Question 2 — Promise Race
 
@@ -330,63 +330,63 @@ console.log(fun);
 // Use Promise.race() and log whichever promise resolves/rejects first.
 // Handle error with .catch().
 
-let p1 = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    resolve("first done.");
-  }, 1000);
-});
+// let p1 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve("first done.");
+//   }, 1000);
+// });
 
-let p2 = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    resolve("second done.");
-  },3000);
-});
+// let p2 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve("second done.");
+//   },3000);
+// });
 
-let p3 = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    resolve("error occurred");
+// let p3 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve("error occurred");
 
-  },2000);
-});
+//   },2000);
+// });
 
-let p4 = Promise.race([p1,p2,p3]);
-p4.then((value)=>{
-  console.log(value);
-p4.catch((err)=>{             //first done. this is output.
-  console.log("to handle the error...");
-});
-});
-// Question 3 — Promise.allSettled
+// let p4 = Promise.race([p1,p2,p3]);
+// p4.then((value)=>{
+//   console.log(value);
+// p4.catch((err)=>{             //first done. this is output.
+//   console.log("to handle the error...");
+// });
+// });
+// // Question 3 — Promise.allSettled
 
-// Make an array of three promises:
+// // Make an array of three promises:
 
-// Two that resolve
+// // Two that resolve
 
-// One that rejects
-// Use Promise.allSettled() to print the status and value of all promises.
+// // One that rejects
+// // Use Promise.allSettled() to print the status and value of all promises.
 
-let p6 = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    resolve("the p6 is resolve");
-  },1000);
+// let p6 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve("the p6 is resolve");
+//   },1000);
 
-})
-let p7 = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    resolve("the p7 is resolve.");
-  },2000);
-});
+// })
+// let p7 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve("the p7 is resolve.");
+//   },2000);
+// });
 
-let p8 = new Promise((resolve,  reject)=>{
-  setTimeout(()=>{
-    reject("the last one is reject.");
-  },3000);
-});
+// let p8 = new Promise((resolve,  reject)=>{
+//   setTimeout(()=>{
+//     reject("the last one is reject.");
+//   },3000);
+// });
 
-let p9 = Promise.allSettled([p6,p7,p8]);
-p9.then((value)=>{
-  console.log(value);
-});
+// let p9 = Promise.allSettled([p6,p7,p8]);
+// p9.then((value)=>{
+//   console.log(value);
+// });
 
 // Question 4 — Custom Error
 
@@ -399,181 +399,213 @@ p9.then((value)=>{
 // Else print "Welcome, name!".
 // Wrap the function call in try...catch and handle both errors.
 // Always print "Validation complete" in finally.
-  function validateUser(){
-    let name = prompt("enter your age:");
-   if(name==""){
-      try{
-        console.log("the name is full...");
-         throw new Error ("the username is empty... try again...");
-      }
-      catch(err){
-         console.log("your length of name is too short! becausethis this reason error...");
-         console.log(err.message);
-      }
-    }
-    else if(name.length<=4){
-      throw new Error ("the username is too short!...");
-    }
-    else{
-      console.log("the age is less than of 200.");
-    }
-}
+//   function validateUser(){
+//     let name = prompt("enter your age:");
+//    if(name==""){
+//       try{
+//         console.log("the name is full...");
+//          throw new Error ("the username is empty... try again...");
+//       }
+//       catch(err){
+//          console.log("your length of name is too short! becausethis this reason error...");
+//          console.log(err.message);
+//       }
+//     }
+//     else if(name.length<=4){
+//       throw new Error ("the username is too short!...");
+//     }
+//     else{
+//       console.log("the age is less than of 200.");
+//     }
+// }
 
-let a = validateUser();
-console.log(a);
+// let a = validateUser();
+// console.log(a);
 
-// Question 5 — Simulate Hacking Progress (Async Challenge)
+// // Question 5 — Simulate Hacking Progress (Async Challenge)
 
-// Create an async function that shows fake hacking steps one after another using await and setTimeout inside a Promise:
+// // Create an async function that shows fake hacking steps one after another using await and setTimeout inside a Promise:
 
-// "Initializing hack..." (1 sec)
+// // "Initializing hack..." (1 sec)
 
-// "Connecting to server..." (2 sec)
+// // "Connecting to server..." (2 sec)
 
-// "Fetching data..." (2 sec)
+// // "Fetching data..." (2 sec)
 
-// "Hack complete!" (1 sec)
-// Handle any error using try...catch.
+// // "Hack complete!" (1 sec)
+// // Handle any error using try...catch.
 
-async function hacking(){
-  let first = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      console.log("initializing hack....");
-      resolve("initializing hack....");
-    },1000);
+// async function hacking(){
+//   let first = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       console.log("initializing hack....");
+//       resolve("initializing hack....");
+//     },1000);
 
-  });
+//   });
 
-  let second  = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      console.log("connecting to the server....");
-      resolve("connecting to the server....");
-    },2000);
+//   let second  = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("connecting to the server....");
+//       resolve("connecting to the server....");
+//     },2000);
    
-  });
+//   });
 
-  let third = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      console.log("Fetching data.....");
-      resolve("Fetching data.....");
-    },3000);
+//   let third = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       console.log("Fetching data.....");
+//       resolve("Fetching data.....");
+//     },3000);
    
 
-  });
+//   });
 
-  let fourth = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      console.log("Hack complete!");
-      resolve("Hack complete!");
-    }, 1000);
+//   let fourth = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       console.log("Hack complete!");
+//       resolve("Hack complete!");
+//     }, 1000);
    
-  });
+//   });
 
-  let a = await first;
-  let b = await second;
-  let c = await third;
-  let d = await fourth;
+//   let a = await first;
+//   let b = await second;
+//   let c = await third;
+//   let d = await fourth;
 
-  return([a,b,c,d]);
+//   return([a,b,c,d]);
 
 
-}
-hacking();
+// }
+// hacking();
 
-// Question 6 — Error in Async Function
+// // Question 6 — Error in Async Function
 
-// Make an async function that fetches data from an invalid URL using fetch().
-// Use try...catch to handle the error and print a custom message like "Cannot fetch data, please check the URL.".
-// Create three async functions:
+// // Make an async function that fetches data from an invalid URL using fetch().
+// // Use try...catch to handle the error and print a custom message like "Cannot fetch data, please check the URL.".
+// // Create three async functions:
 
-// getUser() → returns "User Data" after 2 sec
+// // getUser() → returns "User Data" after 2 sec
 
-// getPosts() → returns "User Posts" after 3 sec
+// // getPosts() → returns "User Posts" after 3 sec
 
-// getComments() → returns "User Comments" after 1 sec
-// Use Promise.all() to wait for all of them and print results together.
+// // getComments() → returns "User Comments" after 1 sec
+// // Use Promise.all() to wait for all of them and print results together.
 
-async function getUser(){
-  let po1 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      resolve("user Data.")
-    }, 2000);
-  });
+// async function getUser(){
+//   let po1 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("user Data.")
+//     }, 2000);
+//   });
 
-  return await po1;
+//   return await po1;
 
-}
-getUser();
+// }
+// getUser();
 
-async function getPosts(){
-  let po2 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      resolve("user Post");
-    }, 3000);
-  });
+// async function getPosts(){
+//   let po2 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("user Post");
+//     }, 3000);
+//   });
 
-  return await po2;
-}
-getPosts();
+//   return await po2;
+// }
+// getPosts();
 
-async function getComments(){
-  let po3 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      resolve("get comments--");
-    },1000);
-  });
+// async function getComments(){
+//   let po3 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("get comments--");
+//     },1000);
+//   });
 
-  return await po3
-}
-getComments();
+//   return await po3
+// }
+// getComments();
 
-let po5 = Promise.all([getUser(), getComments(),getPosts()]);
+// let po5 = Promise.all([getUser(), getComments(),getPosts()]);
 
-po5.then((value)=>{
-  console.log(value);
+// po5.then((value)=>{
+//   console.log(value);
+// });
+
+// // Question 8 — Custom Reference Error
+
+// // Inside a try block, use throw new ReferenceError("Variable not found!").
+// // Catch and print both err.name and err.message.
+// // Add a finally that prints "Execution Finished!".
+// function trycatch(){
+// try{
+//   a =10;
+//   console.log("this is a try block");
+//   throw new ReferenceError("variable not found!");
+// }
+// catch(err){
+//   console.log(err.message);
+//   console.log(err.name);
+// }
+
+// finally{
+//   console.log("Execution is finished!");
+// }
+// }
+// trycatch();
+
+
+// // Question 9 — Async with Rejected Promise
+
+// // Create a promise that rejects after 2 sec with message "Server down!".
+// // Handle it inside an async function using try...catch.
+
+// async function reject(){
+//   let re =  new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//      reject("server down!");
+//     },2000);
+//   });
+//   try{
+  
+//   return await re; 
+//   }
+//   catch(err){
+//     console.log("the server is down.");
+//     console.log(err.message);
+//   }
+// }
+// reject();
+
+//fetch 
+
+let p = fetch("https://api.thecatapi.com/v1/images/search");
+p.then((value)=>{
+  return value.json();
+}).then((data)=>{
+   let img = document.createElement("img");
+   img.src = data[0].url;
+   document.body.appendChild(img);
 });
 
-// Question 8 — Custom Reference Error
+let pro = fetch("https:/api/cats?tags=tag1,tag2&skip=0&limit=10",{
+  method: "POST",
+  Headers:{
+    "Content-Type" : "application/json"
+},
 
-// Inside a try block, use throw new ReferenceError("Variable not found!").
-// Catch and print both err.name and err.message.
-// Add a finally that prints "Execution Finished!".
-function trycatch(){
-try{
-  a =10;
-  console.log("this is a try block");
-  throw new ReferenceError("variable not found!");
-}
-catch(err){
-  console.log(err.message);
-  console.log(err.name);
-}
+  body: JSON.stringify({
+    title: "hashim",
+    age: "43",
+    userid: 1
+  })
+})
 
-finally{
-  console.log("Execution is finished!");
-}
-}
-trycatch();
-
-
-// Question 9 — Async with Rejected Promise
-
-// Create a promise that rejects after 2 sec with message "Server down!".
-// Handle it inside an async function using try...catch.
-
-async function reject(){
-  let re =  new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-     reject("server down!");
-    },2000);
-  });
-  try{
-  
-  return await re; 
-  }
-  catch(err){
-    console.log("the server is down.");
-    console.log(err.message);
-  }
-}
-reject();
+pro.then((response)=>{
+  return response.json();
+}).then((data)=>{
+  console.log(data);
+}).catch((err)=>{
+    console.log("error", err);
+})
