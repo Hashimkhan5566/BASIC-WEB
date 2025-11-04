@@ -580,32 +580,66 @@
 
 //fetch 
 
-let p = fetch("https://api.thecatapi.com/v1/images/search");
-p.then((value)=>{
-  return value.json();
-}).then((data)=>{
-   let img = document.createElement("img");
-   img.src = data[0].url;
-   document.body.appendChild(img);
-});
+// let p = fetch("https://api.thecatapi.com/v1/images/search");
+// p.then((value)=>{
+//   return value.json();
+// }).then((data)=>{
+//    let img = document.createElement("img");
+//    img.src = data[0].url;
+//    document.body.appendChild(img);
+// });
 
-let pro = fetch("https:/api/cats?tags=tag1,tag2&skip=0&limit=10",{
-  method: "POST",
-  Headers:{
-    "Content-Type" : "application/json"
-},
+// let pro = fetch("https:/api/cats?tags=tag1,tag2&skip=0&limit=10",{
+//   method: "POST",
+//   Headers:{
+//     "Content-Type" : "application/json"
+// },
 
-  body: JSON.stringify({
-    title: "hashim",
-    age: "43",
-    userid: 1
-  })
-})
+//   body: JSON.stringify({
+//     title: "hashim",
+//     age: "43",
+//     userid: 1
+//   })
+// })
 
-pro.then((response)=>{
-  return response.json();
-}).then((data)=>{
-  console.log(data);
-}).catch((err)=>{
-    console.log("error", err);
-})
+// pro.then((response)=>{
+//   return response.json();
+// }).then((data)=>{
+//   console.log(data);
+// }).catch((err)=>{
+//     console.log("error", err);
+// })
+
+// document.cookie="harry123";
+// console.log(document.cookie);
+// document.cookie = "harry3455";
+// console.log(document.cookie);
+// let key = prompt("enter yor key");
+// let value = prompt("enter your value");
+// document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
+// console.log(document.cookie);
+
+let key = prompt("enter your key");
+let value = prompt("enter your value");
+
+localStorage.setItem(key,value);
+
+console.log(`the value of${key} and the value${localStorage.getItem(key)}`);
+
+if(key=="red" || key=="blue"){
+  localStorage.removeItem(key);
+  console.log(`${key} to remove the key. `);
+}
+
+if(key === "0"){
+  localStorage.clear();
+}
+ console.log("he localstorage is clear.");
+
+
+
+ window.onstorage = (e)=>{
+  alert("change");
+   console.log(e);
+ }
+
