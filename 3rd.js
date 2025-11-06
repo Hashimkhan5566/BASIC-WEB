@@ -619,27 +619,130 @@
 // document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
 // console.log(document.cookie);
 
-let key = prompt("enter your key");
-let value = prompt("enter your value");
+// let key1 = prompt("enter your key");
+// let value1 = prompt("enter your value");
 
-localStorage.setItem(key,value);
+// localStorage.setItem(key1,value1);
 
-console.log(`the value of${key} and the value${localStorage.getItem(key)}`);
+// console.log(`the value of${key1} and the value${localStorage.getItem(key1)}`);
 
-if(key=="red" || key=="blue"){
-  localStorage.removeItem(key);
-  console.log(`${key} to remove the key. `);
-}
+// if(key1=="red" || key1=="blue"){
+//   localStorage.removeItem(key1);
+//   console.log(`${key1} to remove the key. `);
+// }
 
-if(key === "0"){
-  localStorage.clear();
-}
- console.log("he localstorage is clear.");
+// if(key1 === "0"){
+//   localStorage.clear();
+// }
+//  console.log("he localstorage is clear.");
 
 
 
- window.onstorage = (e)=>{
-  alert("change");
-   console.log(e);
- }
+//  window.onstorage = (e)=>{
+//   alert("change");
+//    console.log(e);
+//  }
+
+//practice Question.
+// 🟢 1. Fetch API
+
+// Easy: Getting a random joke from a public joke API and showing it on your webpage.
+// Complex: Building a live weather dashboard that calls multiple APIs (weather, location, time) together and updates automatically every few seconds.
+// let p0 = fetch("https://official-joke-api.appspot.com/random_joke");
+// p0.then((value)=>{
+//   return value.json();
+// }).then((data)=>{
+//    console.log(data);
+// })
+
+// // Intermediate: Sending user form data (like name and email) to your server and displaying a success message after the server responds.
+
+// let a = fetch("https://jsonplaceholder.typicode.com/posts",{
+
+//   method: "POST",
+
+//   headers:{
+//     "content.Type" :"application.json"
+// },
+//   body: JSON.stringify({
+//       title: "hashim",
+//       age: 32,
+//       id: 1
+//   })
+
+// })
+// a.then((response)=>{
+//    response.json();
+// }).then((data)=>{
+//   console.log(data);
+
+// });
+
+let p0 = fetch("http://goweather.xyz/weather/swabi");
+p0.then((value1)=>{
+    console.log(value1.status);
+    console.log(value1.ok);
+    return value1.json();
+    
+    
+}).then((value2)=>{
+    console.log(value2);
+}) 
+
+// Fetching a random joke from a public API and showing it on your webpage.
+
+// 👉 “Get data from a public jokes API and display the joke text on the screen.”
+
+let p1 = fetch("https://api.chucknorris.io/jokes/random");
+p1.then((value3)=>{
+    console.log(value3.status);
+    console.log(value3)
+    return value3.text();
+}).then((value4)=>{
+    console.log(value4);
+})
+//🟡 Intermediate Example:
+
+// Sending user form data (like name and email) to your server, then showing a success message after the server confirms it was received.
+
+// 👉 “Send form details to a backend API and display ‘Form submitted successfully!’ after the response.”
+
+let p8 = fetch("https://jsonplaceholder.typicode.com/posts",{
+    method: "POST",
+    headers:{
+        "content-Type" : "application.json"
+    },
+
+    body: JSON.stringify({
+        title: "hahsim",
+        email: "abc39@gmail.com",
+        id: 1
+    })
+
+});
+p8.then((value5)=>{
+    console.log(value5.status);
+    console.log(value5.ok);
+    return value5.json();
+
+}).then((value6)=>{
+    console.log("successfully right ad post the msg",value6);
+}).catch((error)=>{
+    console.log(error, "something went wrong!");
+})
+
+
+let p9 = fetch("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/");
+p9.then((value9)=>{
+    console.log(p9.status);
+    console.log(p9.ok);
+
+    return value9.json()
+
+}).then((value7)=>{
+    console.log(value7);
+}).catch((err)=>{
+    console.log(err.message);
+    console.log(err.refernce);
+});
 
