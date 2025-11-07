@@ -746,3 +746,47 @@ p9.then((value9)=>{
     console.log(err.refernce);
 });
 
+document.cookie = "name=hashim khan";
+document.cookie = "age=23";
+document.cookie = "address=wert ";
+
+console.log(document.cookie);
+
+
+let key = prompt("enter your key");
+let value = prompt("enter your value");
+
+document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
+console.log(document.cookie);
+
+let p12 = fetch("https://jsonplaceholder.typicode.com/users",{
+
+    method: "POST",
+    headers:{
+       "content.Type": "application/json"
+    },
+
+    body: JSON.stringify({
+        title: "hashim",
+        age: 23,
+        email:"we23@gmail.com"
+    })
+
+})
+p12.then((value12)=>{
+    return value12.json();
+}).then((data)=>{
+    console.log(data);
+    console.log("this value is successfully get");
+}).catch((err)=>{
+    console.log(err, "this error is wrong because we try to fix it...")
+})
+console.log(p12);
+
+// When a user types their name and clicks “Save,” store it in a cookie.
+// When the user refreshes or comes back later, greet them with “Welcome back, [name]!”documnt
+
+document.cookie =  "name=alyan";
+document.cookie = "age= 45";
+
+console.log(document.cookie);
