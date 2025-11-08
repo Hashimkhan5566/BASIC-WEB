@@ -693,100 +693,196 @@ p0.then((value1)=>{
 
 // 👉 “Get data from a public jokes API and display the joke text on the screen.”
 
-let p1 = fetch("https://api.chucknorris.io/jokes/random");
-p1.then((value3)=>{
-    console.log(value3.status);
-    console.log(value3)
-    return value3.text();
-}).then((value4)=>{
-    console.log(value4);
+// let p1 = fetch("https://api.chucknorris.io/jokes/random");
+// p1.then((value3)=>{
+//     console.log(value3.status);
+//     console.log(value3)
+//     return value3.text();
+// }).then((value4)=>{
+//     console.log(value4);
+// })
+// //🟡 Intermediate Example:
+
+// // Sending user form data (like name and email) to your server, then showing a success message after the server confirms it was received.
+
+// // 👉 “Send form details to a backend API and display ‘Form submitted successfully!’ after the response.”
+
+// let p8 = fetch("https://jsonplaceholder.typicode.com/posts",{
+//     method: "POST",
+//     headers:{
+//         "content-Type" : "application.json"
+//     },
+
+//     body: JSON.stringify({
+//         title: "hahsim",
+//         email: "abc39@gmail.com",
+//         id: 1
+//     })
+
+// });
+// p8.then((value5)=>{
+//     console.log(value5.status);
+//     console.log(value5.ok);
+//     return value5.json();
+
+// }).then((value6)=>{
+//     console.log("successfully right ad post the msg",value6);
+// }).catch((error)=>{
+//     console.log(error, "something went wrong!");
+// })
+
+
+// let p9 = fetch("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/");
+// p9.then((value9)=>{
+//     console.log(p9.status);
+//     console.log(p9.ok);
+
+//     return value9.json()
+
+// }).then((value7)=>{
+//     console.log(value7);
+// }).catch((err)=>{
+//     console.log(err.message);
+//     console.log(err.refernce);
+// });
+
+// document.cookie = "name=hashim khan";
+// document.cookie = "age=23";
+// document.cookie = "address=wert ";
+
+// console.log(document.cookie);
+
+
+// let key = prompt("enter your key");
+// let value = prompt("enter your value");
+
+// document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
+// console.log(document.cookie);
+
+// let p12 = fetch("https://jsonplaceholder.typicode.com/users",{
+
+//     method: "POST",
+//     headers:{
+//        "content.Type": "application/json"
+//     },
+
+//     body: JSON.stringify({
+//         title: "hashim",
+//         age: 23,
+//         email:"we23@gmail.com"
+//     })
+
+// })
+// p12.then((value12)=>{
+//     return value12.json();
+// }).then((data)=>{
+//     console.log(data);
+//     console.log("this value is successfully get");
+// }).catch((err)=>{
+//     console.log(err, "this error is wrong because we try to fix it...")
+// })
+// console.log(p12);
+
+let sum = ()=>{
+    console.log("hey i good");
+
+}
+
+sum();
+
+function avgrule(x,y){
+   return (1+(x+y/10));
+}
+
+let a =156;
+let b =56;
+let c = 543;
+
+console.log("the a and b average is", avgrule(a,b));
+
+
+let array = [12,33,54,65,88,332];
+let array_c = array.join("and");
+console.log(array_c, "they join the array");
+console.log(array);
+let array_2 = [21,5.6456,565,32,11];
+let array_3 = [123,4235,22,4];
+let d = array.concat(array_2,array_3, "they concat the value")
+console.log(d);
+
+console.log(array_2.push(0.00), array_2, "they pushh value");
+console.log(array_3.pop(),array_3, "they pop value");
+console.log(array.shift(), "they shift the value");
+console.log(array.unshift(100.00), "they  unshipt value", array);
+console.log(array.length);
+let a1 = delete array[0];
+console.log(a1,array.length);
+
+//ascending order
+
+let compare = (a, b)=>{
+    return b - a;
+}
+
+let array_sort = [12,43,0.9,1,2,3,4, -90, 70];
+array_sort.sort(compare);
+console.log(array_sort);
+array_sort.splice(1, 4);
+let deletedValues = array_sort.splice(1, 4);
+console.log(array_sort);
+console.log("deletedValues", deletedValues);
+
+//slice and reverse
+
+let sli = [1,32,54,67,,44,54];
+sli.slice(1,3);
+console.log(sli);
+sli.reverse()
+
+console.log(sli);
+
+// push()
+
+// Add a new value to the end of an array.
+
+// Example: Add a new score to a scores array.
+
+// Prompt: “I have [10, 20, 30]. Use push() to add 40 at the end. What does the array look like now?”
+
+//map
+let short_array = [12,32,54,65];
+
+let array_short = short_array.map((value, index, array)=>{
+    console.log(value, index, array);
+    return value+1;
 })
-//🟡 Intermediate Example:
+console.log(short_array, array_short);
 
-// Sending user form data (like name and email) to your server, then showing a success message after the server confirms it was received.
+let good_array = [12,33,433,45];
 
-// 👉 “Send form details to a backend API and display ‘Form submitted successfully!’ after the response.”
-
-let p8 = fetch("https://jsonplaceholder.typicode.com/posts",{
-    method: "POST",
-    headers:{
-        "content-Type" : "application.json"
-    },
-
-    body: JSON.stringify({
-        title: "hahsim",
-        email: "abc39@gmail.com",
-        id: 1
-    })
-
-});
-p8.then((value5)=>{
-    console.log(value5.status);
-    console.log(value5.ok);
-    return value5.json();
-
-}).then((value6)=>{
-    console.log("successfully right ad post the msg",value6);
-}).catch((error)=>{
-    console.log(error, "something went wrong!");
-})
-
-
-let p9 = fetch("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/");
-p9.then((value9)=>{
-    console.log(p9.status);
-    console.log(p9.ok);
-
-    return value9.json()
-
-}).then((value7)=>{
-    console.log(value7);
-}).catch((err)=>{
-    console.log(err.message);
-    console.log(err.refernce);
-});
-
-document.cookie = "name=hashim khan";
-document.cookie = "age=23";
-document.cookie = "address=wert ";
-
-console.log(document.cookie);
-
-
-let key = prompt("enter your key");
-let value = prompt("enter your value");
-
-document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
-console.log(document.cookie);
-
-let p12 = fetch("https://jsonplaceholder.typicode.com/users",{
-
-    method: "POST",
-    headers:{
-       "content.Type": "application/json"
-    },
-
-    body: JSON.stringify({
-        title: "hashim",
-        age: 23,
-        email:"we23@gmail.com"
-    })
+let bad_array = good_array.map((value)=>{
+    console.log(value);
+    return value;
 
 })
-p12.then((value12)=>{
-    return value12.json();
-}).then((data)=>{
-    console.log(data);
-    console.log("this value is successfully get");
-}).catch((err)=>{
-    console.log(err, "this error is wrong because we try to fix it...")
+console.log(bad_array, good_array);
+
+
+//filter
+
+let fil = [12,21,452,431,86];
+
+let fill = fil.filter((a)=>{
+   return a>10;
 })
-console.log(p12);
 
-// When a user types their name and clicks “Save,” store it in a cookie.
-// When the user refreshes or comes back later, greet them with “Welcome back, [name]!”documnt
+console.log(fill, fil);
 
-document.cookie =  "name=alyan";
-document.cookie = "age= 45";
+//reduce
 
-console.log(document.cookie);
+let red = [1,2,3,4,5];
+
+let uce = red.reduce((h1,h2)=>{
+    return h1+h2;
+})
+console.log(uce);
