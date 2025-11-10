@@ -678,211 +678,498 @@
 
 // });
 
-let p0 = fetch("http://goweather.xyz/weather/swabi");
-p0.then((value1)=>{
-    console.log(value1.status);
-    console.log(value1.ok);
-    return value1.json();
+// let p0 = fetch("http://goweather.xyz/weather/swabi");
+// p0.then((value1)=>{
+//     console.log(value1.status);
+//     console.log(value1.ok);
+//     return value1.json();
     
     
-}).then((value2)=>{
-    console.log(value2);
-}) 
+// }).then((value2)=>{
+//     console.log(value2);
+// }) 
 
-// Fetching a random joke from a public API and showing it on your webpage.
+// // Fetching a random joke from a public API and showing it on your webpage.
 
-// 👉 “Get data from a public jokes API and display the joke text on the screen.”
+// // 👉 “Get data from a public jokes API and display the joke text on the screen.”
 
-// let p1 = fetch("https://api.chucknorris.io/jokes/random");
-// p1.then((value3)=>{
-//     console.log(value3.status);
-//     console.log(value3)
-//     return value3.text();
-// }).then((value4)=>{
-//     console.log(value4);
+// // let p1 = fetch("https://api.chucknorris.io/jokes/random");
+// // p1.then((value3)=>{
+// //     console.log(value3.status);
+// //     console.log(value3)
+// //     return value3.text();
+// // }).then((value4)=>{
+// //     console.log(value4);
+// // })
+// // //🟡 Intermediate Example:
+
+// // // Sending user form data (like name and email) to your server, then showing a success message after the server confirms it was received.
+
+// // // 👉 “Send form details to a backend API and display ‘Form submitted successfully!’ after the response.”
+
+// // let p8 = fetch("https://jsonplaceholder.typicode.com/posts",{
+// //     method: "POST",
+// //     headers:{
+// //         "content-Type" : "application.json"
+// //     },
+
+// //     body: JSON.stringify({
+// //         title: "hahsim",
+// //         email: "abc39@gmail.com",
+// //         id: 1
+// //     })
+
+// // });
+// // p8.then((value5)=>{
+// //     console.log(value5.status);
+// //     console.log(value5.ok);
+// //     return value5.json();
+
+// // }).then((value6)=>{
+// //     console.log("successfully right ad post the msg",value6);
+// // }).catch((error)=>{
+// //     console.log(error, "something went wrong!");
+// // })
+
+
+// // let p9 = fetch("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/");
+// // p9.then((value9)=>{
+// //     console.log(p9.status);
+// //     console.log(p9.ok);
+
+// //     return value9.json()
+
+// // }).then((value7)=>{
+// //     console.log(value7);
+// // }).catch((err)=>{
+// //     console.log(err.message);
+// //     console.log(err.refernce);
+// // });
+
+// // document.cookie = "name=hashim khan";
+// // document.cookie = "age=23";
+// // document.cookie = "address=wert ";
+
+// // console.log(document.cookie);
+
+
+// // let key = prompt("enter your key");
+// // let value = prompt("enter your value");
+
+// // document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
+// // console.log(document.cookie);
+
+// // let p12 = fetch("https://jsonplaceholder.typicode.com/users",{
+
+// //     method: "POST",
+// //     headers:{
+// //        "content.Type": "application/json"
+// //     },
+
+// //     body: JSON.stringify({
+// //         title: "hashim",
+// //         age: 23,
+// //         email:"we23@gmail.com"
+// //     })
+
+// // })
+// // p12.then((value12)=>{
+// //     return value12.json();
+// // }).then((data)=>{
+// //     console.log(data);
+// //     console.log("this value is successfully get");
+// // }).catch((err)=>{
+// //     console.log(err, "this error is wrong because we try to fix it...")
+// // })
+// // console.log(p12);
+
+// let sum = ()=>{
+//     console.log("hey i good");
+
+// }
+
+// sum();
+
+// function avgrule(x,y){
+//    return (1+(x+y/10));
+// }
+
+// let a =156;
+// let b =56;
+// let c = 543;
+
+// console.log("the a and b average is", avgrule(a,b));
+
+
+// let array = [12,33,54,65,88,332];
+// let array_c = array.join("and");
+// console.log(array_c, "they join the array");
+// console.log(array);
+// let array_2 = [21,5.6456,565,32,11];
+// let array_3 = [123,4235,22,4];
+// let d = array.concat(array_2,array_3, "they concat the value")
+// console.log(d);
+
+// console.log(array_2.push(0.00), array_2, "they pushh value");
+// console.log(array_3.pop(),array_3, "they pop value");
+// console.log(array.shift(), "they shift the value");
+// console.log(array.unshift(100.00), "they  unshipt value", array);
+// console.log(array.length);
+// let a1 = delete array[0];
+// console.log(a1,array.length);
+
+// //ascending order
+
+// let compare = (a, b)=>{
+//     return b - a;
+// }
+
+// let array_sort = [12,43,0.9,1,2,3,4, -90, 70];
+// array_sort.sort(compare);
+// console.log(array_sort);
+// array_sort.splice(1, 4);
+// let deletedValues = array_sort.splice(1, 4);
+// console.log(array_sort);
+// console.log("deletedValues", deletedValues);
+
+// //slice and reverse
+
+// let sli = [1,32,54,67,,44,54];
+// sli.slice(1,3);
+// console.log(sli);
+// sli.reverse()
+
+// console.log(sli);
+
+// // push()
+
+// // Add a new value to the end of an array.
+
+// // Example: Add a new score to a scores array.
+
+// // Prompt: “I have [10, 20, 30]. Use push() to add 40 at the end. What does the array look like now?”
+
+// //map
+// let short_array = [12,32,54,65];
+
+// let array_short = short_array.map((value, index, array)=>{
+//     console.log(value, index, array);
+//     return value+1;
 // })
-// //🟡 Intermediate Example:
+// console.log(short_array, array_short);
 
-// // Sending user form data (like name and email) to your server, then showing a success message after the server confirms it was received.
+// let good_array = [12,33,433,45];
 
-// // 👉 “Send form details to a backend API and display ‘Form submitted successfully!’ after the response.”
-
-// let p8 = fetch("https://jsonplaceholder.typicode.com/posts",{
-//     method: "POST",
-//     headers:{
-//         "content-Type" : "application.json"
-//     },
-
-//     body: JSON.stringify({
-//         title: "hahsim",
-//         email: "abc39@gmail.com",
-//         id: 1
-//     })
-
-// });
-// p8.then((value5)=>{
-//     console.log(value5.status);
-//     console.log(value5.ok);
-//     return value5.json();
-
-// }).then((value6)=>{
-//     console.log("successfully right ad post the msg",value6);
-// }).catch((error)=>{
-//     console.log(error, "something went wrong!");
-// })
-
-
-// let p9 = fetch("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/");
-// p9.then((value9)=>{
-//     console.log(p9.status);
-//     console.log(p9.ok);
-
-//     return value9.json()
-
-// }).then((value7)=>{
-//     console.log(value7);
-// }).catch((err)=>{
-//     console.log(err.message);
-//     console.log(err.refernce);
-// });
-
-// document.cookie = "name=hashim khan";
-// document.cookie = "age=23";
-// document.cookie = "address=wert ";
-
-// console.log(document.cookie);
-
-
-// let key = prompt("enter your key");
-// let value = prompt("enter your value");
-
-// document.cookie = (`${encodeURIComponent(key)}= ${encodeURIComponent(value)}`);
-// console.log(document.cookie);
-
-// let p12 = fetch("https://jsonplaceholder.typicode.com/users",{
-
-//     method: "POST",
-//     headers:{
-//        "content.Type": "application/json"
-//     },
-
-//     body: JSON.stringify({
-//         title: "hashim",
-//         age: 23,
-//         email:"we23@gmail.com"
-//     })
+// let bad_array = good_array.map((value)=>{
+//     console.log(value);
+//     return value;
 
 // })
-// p12.then((value12)=>{
-//     return value12.json();
-// }).then((data)=>{
-//     console.log(data);
-//     console.log("this value is successfully get");
-// }).catch((err)=>{
-//     console.log(err, "this error is wrong because we try to fix it...")
-// })
-// console.log(p12);
+// console.log(bad_array, good_array);
 
-let sum = ()=>{
-    console.log("hey i good");
+
+// //filter
+
+// let fil = [12,21,452,431,86];
+
+// let fill = fil.filter((a)=>{
+//    return a>10;
+// })
+
+// console.log(fill, fil);
+
+// //reduce
+
+// let red = [1,2,3,4,5];
+
+// let uce = red.reduce((h1,h2)=>{
+//     return h1+h2;
+// })
+// console.log(uce);
+
+//DOM 
+// console.log(document.body.firstChild);
+// console.log(document.body.lastChild);
+// console.log(document.body.childNodes);
+
+// console.log(document.documentElement);
+// console.log(document.head);
+// console.log(document.body);
+// console.log(document.documentElement.parentElement);
+// console.log(document.documentElement.parentNodes);
+// console.log(document.head.previousSibling);
+// console.log(document.body.ChildElementSibling);
+// console.log(document.head.nextElementSibling);
+// console.log(document.body.previousElementSibling);
+// // 🧩 Array Methods — Real-world Prompts
+
+// // push() → Add a new product to your shopping cart list.
+// // Example: “Add ‘Laptop’ to your shopping cart array.”
+// let  first = ["gasSelender", "bijlibill"] ;
+// let first_posh =  first.push("laptop");
+// console.log(first_posh, first);
+
+
+// // pop() → Remove the last watched movie from your watchlist.
+// // Example: “Remove the most recently added movie from the list.”
+// let rm = ["motupatlu", "shiva", "tum se tak", "tu ashiqi hai"];
+
+// let rm_popp = rm.pop();
+// console.log(rm_popp);
+// // shift() → Remove the first student from the classroom attendance list.
+// // Example: “Remove the first name from the student attendance array.”
+// let shiptt = [12,"rooot", "toor", 432];
+
+// let sh_shippt = shiptt.shift();
+// console.log(sh_shippt);
+// // unshift() → Add a new student at the start of the class list.
+// // Example: “Add ‘Ali’ at the beginning of the student array.”
+// let student_rolnumber = [12,10,2,3,4,67,90];
+// let add_unshipt = student_rolnumber.unshift(1);
+// console.log(add_unshipt, student_rolnumber);
+// // slice() → Copy the first 3 items of your favorite songs list without changing the original.
+// // Example: “Get only the first 3 songs from the playlist.”
+
+// let song_list = ["shhoootin", "dewwali", "dewangi", "ashiqi", "mohraa", "dagha","ta ba sa k"];
+
+// let pick = song_list.slice(0,3);
+// console.log(pick);
+// // splice() → Remove 2 old contacts and add 1 new contact in your phone list.
+// // Example: “Replace 2 friends in the contact array with 1 new name.”
+// let contact = ["03100100", "+919203202", "+320120392", "+11233580823"];
+
+// let rem = contact.splice(0, 1, "+2211334455");
+// console.log(rem, contact);
+// // sort() → Arrange your exam scores from highest to lowest.
+// // Example: “Sort the numbers in descending order to see who scored the best.”
+// let commpare =(a,b)=>{
+//     return a-b;
+
+// }
+// let sorrt = [100,50,25,15,5,1.5,-7.5];
+// let srt_array = sorrt.sort(commpare);
+
+// console.log(srt_array);
+ 
+// // reverse() → Show the top 5 news headlines in reverse order.
+// // Example: “Reverse the list of headlines to show the latest first.”
+// let rev = ["today news is adyala jail", "today news is amendement of law constitution", "today news is to banned on Pti"];
+
+// let rmovve = rev.reverse();
+// console.log(rmovve);
+
+// //⚙️ Functions — Real-world Prompts
+
+// // Traditional Function
+// // Example: “Create a function called calculateBill that takes item prices and returns the total bill.”
+// function claculate_bill(a,b,c) {
+//     return a+b+c;
+// }
+
+// let a = 11;
+// let c = 23;
+// let d = 43;
+
+// console.log("this is total of value",claculate_bill(a,d,c));
+
+// // Arrow Function
+// // Example: “Use an arrow function to check if a number is even or odd.”
+
+// let check= (num)=>{
+//     return num%2==0 ? "even": "odd";
+// }
+// let v =prompt("enter your number:");
+// let u  = Number(v);
+// console.log("this is even or odd:", check(u));
+// Function Inside Object
+// Example: “In a user object, create a function getFullName() that returns the user’s full name.”
+
+// Function Returning Function (Closure)..that return another function.
+// Example: “Write a function that returns another function to calculate discount based on a given percentage.”
+// let table = document.body.firstElementChild;
+// console.log(table.rows);
+// console.log(table.tFoot);
+// console.log(table.tHead);
+// console.log(table);
+
+// // 🌐 DOM — Real-world Prompts
+
+// // Access Children:
+// // Example: “Get all the <li> items inside a <ul> list of to-do tasks.”
+// let ul = document.getElementsByClassName("sel")[0];
+// console.log(ul.firstElementChild);
+
+
+
+// // Access Parent:
+// // Example: “Find the parent <div> of a clicked button and change its background color.”
+// let access = document.body.parentNode;
+// access.style.backgroundColor = "red";
+// console.log(access);
+
+// // Access Siblings:
+// // Example: “After clicking one image, get its next sibling image and apply a border around it.”
+// let siblin = document.head.preiousElementSibling;
+// console.log(siblin);
+// // Change Content:
+// Example: “When a user types in an input box, show the text in a <p> tag below it.”
+
+// Event Handling:
+// Example: “When the ‘Submit’ button is clicked, run a function that displays a thank-you message.”
+
+//matches
+
+// let mat = document.getElementById("text");
+
+// console.log(mat);
+// console.log(mat.matches("#class"));
+// console.log(mat.matches("#text"));
+// let matt = document.getElementsByClassName("sel")[0];
+// console.log(matt);
+// console.log(matt.closest(".sel"));
+// let mattt =document.getElementById("harry");
+
+// console.log(mattt.contains(harry));
+//oop
+//protoype.
+
+// let obj = {
+//     name2: "hashim",
+//     language: "javascript",
+//     run: () =>{
+//         alert("self run")
+
+//     }
+// }
+// console.log(obj);
+
+// let p ={
+//     run: ()=>{
+//         alert("run");
+//     }
+
+// }
+// p.__proto__ ={
+//     name1: "jackie"
+// }
+// obj.__proto__ =p;
+// obj.run();
+// console.log(obj.name1);
+
+
+let obj2 = {
+    name5: "khani",
+    language: "javascript",
+
+    run: () =>{
+        alert("self run 1")
+    }
+}
+console.log(obj2);
+//let obj = {
+//     name2: "hashim",
+//     language: "javascript",
+//     run: () =>{
+//         alert("self run")
+
+//     }
+// }
+// console.log(obj);
+
+let p  = {
+    run: ()=>{
+
+    alert("self run");
+    }
+
 
 }
+//let p ={
+//     run: ()=>{
+//         alert("run");
+//     }
 
-sum();
-
-function avgrule(x,y){
-   return (1+(x+y/10));
+// }
+// p.__proto__ ={
+//     name1: "jackie"
+// }
+// obj.__proto__ =p;
+// obj.run();
+// console.log(obj.name1);
+p.__proto__ ={
+    name3 : "jacobi"
 }
+obj2.__proto__ = p;
+obj2.run();
+console.log(obj2.name3);
 
-let a =156;
-let b =56;
-let c = 543;
+//
+class RailwayForm{
+    submit(){
+        alert("this is submitted");
+    }
+    cancel(){
+        alert("this is cancel");
+    }
 
-console.log("the a and b average is", avgrule(a,b));
 
-
-let array = [12,33,54,65,88,332];
-let array_c = array.join("and");
-console.log(array_c, "they join the array");
-console.log(array);
-let array_2 = [21,5.6456,565,32,11];
-let array_3 = [123,4235,22,4];
-let d = array.concat(array_2,array_3, "they concat the value")
-console.log(d);
-
-console.log(array_2.push(0.00), array_2, "they pushh value");
-console.log(array_3.pop(),array_3, "they pop value");
-console.log(array.shift(), "they shift the value");
-console.log(array.unshift(100.00), "they  unshipt value", array);
-console.log(array.length);
-let a1 = delete array[0];
-console.log(a1,array.length);
-
-//ascending order
-
-let compare = (a, b)=>{
-    return b - a;
 }
+let harry =new RailwayForm();
+let rohan = new RailwayForm();
 
-let array_sort = [12,43,0.9,1,2,3,4, -90, 70];
-array_sort.sort(compare);
-console.log(array_sort);
-array_sort.splice(1, 4);
-let deletedValues = array_sort.splice(1, 4);
-console.log(array_sort);
-console.log("deletedValues", deletedValues);
+harry.submit();
+rohan.cancel();
+// Objects: Honda, Toyota, Tesla
+// 👉 The class defines what every car has (engine, color, model) and what every car can do (start, stop).
+class car{
+    constructor(name){
+        this.name = name;
+    }
+    start(){
+        alert(this.name +  "  car is start");
+    }
+    stop(){
 
-//slice and reverse
+        alert(this.name +  "  car is stopped");
+    }
+}
+let honda = new car("honda");
+let tesla = new car("tesla");
+let toyota = new car("toyota");
 
-let sli = [1,32,54,67,,44,54];
-sli.slice(1,3);
-console.log(sli);
-sli.reverse()
-
-console.log(sli);
-
-// push()
-
-// Add a new value to the end of an array.
-
-// Example: Add a new score to a scores array.
-
-// Prompt: “I have [10, 20, 30]. Use push() to add 40 at the end. What does the array look like now?”
-
-//map
-let short_array = [12,32,54,65];
-
-let array_short = short_array.map((value, index, array)=>{
-    console.log(value, index, array);
-    return value+1;
-})
-console.log(short_array, array_short);
-
-let good_array = [12,33,433,45];
-
-let bad_array = good_array.map((value)=>{
-    console.log(value);
-    return value;
-
-})
-console.log(bad_array, good_array);
+honda.start();
+tesla.stop();
+toyota.start();
 
 
-//filter
+// class 
+//lass: Person
+// Objects: Ali, Sara, John
+// 👉 The class defines that every person has (name, age) and can do (speak, walk).
 
-let fil = [12,21,452,431,86];
+class person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
 
-let fill = fil.filter((a)=>{
-   return a>10;
-})
+    }
+    speak(){
+        alert(this.name +  "is speaking .age:" + this.age);
+    }
+    walk(){
+        alert(this.name + "is walking  .age:" + this.age);
+    }
 
-console.log(fill, fil);
+}
+let ahmad = new person("ahmad", 20);
 
-//reduce
+let sahal = new person("sahal", 45);
 
-let red = [1,2,3,4,5];
+let lala = new person("lala",40);
 
-let uce = red.reduce((h1,h2)=>{
-    return h1+h2;
-})
-console.log(uce);
+
+ahmad.speak();
+lala.walk();
+sahal.speak();
+
+
