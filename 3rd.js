@@ -1171,5 +1171,57 @@ let lala = new person("lala",40);
 ahmad.speak();
 lala.walk();
 sahal.speak();
+/////////\\\\\\\\
+
+class colony{
+    constructor (name, No, address, RoadNumber){
+        this.name = name;
+        this.address  = address;
+        this.No =  No;
+        this.RoadNumber= RoadNumber;
 
 
+    }
+    pick_address(){
+         alert(this.name + "to pick address:" + this.address);
+    }
+    book_plat(){
+       alert(this.name + "to book plat on roadnumber" + this.RoadNumber);
+    }
+    walkon_road(){
+        alert(this.No + "this is no palt is full" + this.address);
+    }
+
+
+}
+
+let colony_book  = new colony("haarry","front_in_web",120, 0.91);
+colony_book.pick_address();
+colony_book.book_plat();
+colony_book.walkon_road();
+
+//inheritance
+
+class animal{
+    constructor(name, precision, working){
+        this.name = name;
+        this.precision = precision;
+        this.working = working;
+
+    }
+
+    working(){
+       alert("this is working to eat"+ this.working + this.name);
+    }
+    runing(){
+        alert("this is runing" + this.precision);
+    }
+    decision(){
+      alert("this is precision" + this.precision);
+    }
+}
+
+let ani = new animal("monkey" , "vegetable", "eating");
+ani.working();
+ani.runing();
+ani.decision();
