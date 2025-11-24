@@ -1200,28 +1200,137 @@ colony_book.pick_address();
 colony_book.book_plat();
 colony_book.walkon_road();
 
-//inheritance
 
-class animal{
-    constructor(name, precision, working){
+//
+
+class animal {
+    constructor(name, sound){
         this.name = name;
-        this.precision = precision;
-        this.working = working;
-
+        this.sound = sound;
     }
 
-    working(){
-       alert("this is working to eat"+ this.working + this.name);
-    }
     runing(){
-        alert("this is runing" + this.precision);
+        alert(this.name +"run after eat" );
     }
-    decision(){
-      alert("this is precision" + this.precision);
+    eating(){
+        alert(this.name +"they eat grass" + this.sound);
+    }
+
+}
+class Monkey extends animal{
+    banana(){
+        alert(this.name + "eat bannana");
+    }
+    hide(){
+        alert("this is thorw error");
     }
 }
 
-let ani = new animal("monkey" , "vegetable", "eating");
-ani.working();
-ani.runing();
-ani.decision();
+let buffelo = new animal("buffelo", "awaz_zig_zag");
+let mon = new Monkey("chimpo" , "banana");
+buffelo.runing();
+buffelo.eating();
+mon.banana();
+mon.hide();
+//\\
+class employee{
+    constuctor(name){
+        console.log("this is employee name..");
+        this.name = name;
+    }
+    login(){
+        console.log("you are login.....");
+    }
+    logout(){
+
+        console.log("you are logout.....");
+    }
+
+    requestLeave(Leave){
+       console.log(`you are requested for leave${Leave}.... this is on your end`);
+    }
+
+}
+class programmer extends employee{
+    constuctor(name){
+        console.log(`${name}.this is employee name..`);
+        this.name = name;
+         
+    }
+    requestcoffee(x){
+        console.log(`to request a coffee ${x}.`);
+    }
+    requestLeave(Leave){
+        super.requestLeave(4)
+       // console.log(`the employee to request you ${Leave+1}`);
+       console.log("one extra is granted");
+    }
+}
+let e = new programmer("harry");
+e.login();
+e.requestLeave(3);
+
+// async and await
+async function greet(){
+  let p10  = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("this is promise");
+    },2000);
+  })
+  let p11 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+         reject("this is error");
+    },3000);
+  });
+  try{
+  let value1 =  await p10;
+  console.log(value1);
+
+  let value2 = await p11;
+  console.log(value2);
+  }
+  catch(err){
+      console.log("this is an 1st error", err);
+  }
+}
+greet();
+//promise
+let p23 = new Promise((resolve, reject)=>{
+   setTimeout(()=>{
+    resolve("this is resolve");
+   },2000);
+})
+let p22 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        reject("this is error throw");
+    },3000);
+});
+p23.then((value)=>{
+    console.log(value);
+}).catch((err)=>{
+    console.log("this is error fix", err);
+});
+
+p22.then((value)=>{
+    console.log(value);
+
+}).catch((err)=>{
+    console.log("this is second catch", err);
+});
+
+class person2{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+   login(){
+    alert(this.age +"this is login"+ this.name);
+   }   
+   sinin(){
+    alert(this.name+"this is signin"+this.age);
+   }
+ 
+}
+let p1 = new person2("hashim", 13);
+p1.login();
+p1.sinin(); 
