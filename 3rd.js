@@ -1334,3 +1334,9 @@ class person2{
 let p1 = new person2("hashim", 13);
 p1.login();
 p1.sinin(); 
+//event loop
+console.log(13);
+setTimeout(()=>{
+    console.log(12);
+},2000);
+console.log(14);
