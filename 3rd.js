@@ -1340,3 +1340,57 @@ setTimeout(()=>{
     console.log(12);
 },2000);
 console.log(14);
+//destructuring
+let arr = [12,34,65,65];
+let [a,b,c,d] = arr;
+console.log(a,b,c,d);
+
+//2nd example
+let array1 = [31,43,435,66];
+let [a1,b2,c1,d3] = array1;
+console.log(a1,b2,c1,d3);
+//3rd example
+let array3  = [12,342,463,753,897];
+let [q,...rest] = array3;
+console.log(q,rest); 
+
+//4th example 
+//object destructuring 
+
+let {t,y} = {t:1, y:23};
+console.log(t,y);
+let arry = [12,43,654,321];
+let obj = {...arry};
+console.log(obj);
+
+//IIFE
+(function (){
+    console.log(1200);
+})();
+
+
+//prototype
+
+let q2 ={
+    name2: "hahsim",
+    age: 12
+}
+
+
+console.log(q2);
+let p10 = {
+    run:()=>{
+        alert("run");
+    }
+
+}
+
+p10.__proto__={
+    name: "jacy",
+}
+
+q2.__proto__= p10;
+
+q2.run();
+console.log(q2.name);
+
