@@ -1394,3 +1394,129 @@ q2.__proto__= p10;
 q2.run();
 console.log(q2.name);
 
+// How would you loop through numbers 1–100 and count how many are even?
+
+// How would you loop through an array and find duplicate values?
+
+// How would you stop a loop as soon as you find a specific element?
+
+// What problem requires nested loops to solve?
+let count = 0;
+for(let i=1; i<=100; i++){
+    if(i%2==0){
+        console.log("this is even", i);
+         count++;
+    }
+   
+}
+console.log(`this is even =`, count);
+// Print the multiplication table of a number entered by the user.
+let number1 = prompt("enter your choice number");
+let nomber1 = Number(number1);
+for(let i = 1; i<=10; i++){
+    console.log(`${nomber1}X${i}= ${nomber1*i}`);
+}
+// Create a pattern like this using loops:
+for(let i=7; i>=1; i--){
+    let row = "";
+    for (let j=1; j<=i; j++){
+        row+="*";
+    }
+    console.log(row);
+}
+// Conditions
+
+// Take a number input from user and check if it is positive, negative, or zero.
+
+// Take a grade (A, B, C, D, F) and print the corresponding description.
+
+// Check if a number is divisible by 3 and 5, print different messages accordingly.
+
+let num = prompt("enter a number");
+let nom = Number(num);
+if(nom>1){
+    console.log("this is positive", nom);
+}
+else if(nom<1){
+    console.log("this is negative");
+}
+else{
+    console.log("this is zero");
+}
+
+////....///,,,,,.....
+let grade = prompt("enter the grade");
+if(grade==="A"){
+    console.log("this is grade and pass");
+}
+else if(grade==="B"){
+    console.log("this is grade B and pass between.");
+}
+else{
+    console.log("other grade");
+}
+//...,,,////,,,...///
+let a13 = prompt("enter your number");
+if(a13%3==0){
+    console.log("this is divisible by 3");
+}
+else if(a13%5==0){
+    console.log("this is divisible by 5");
+}
+// Async / Await & Promise
+
+// Simulate fetching user data from a server (use setTimeout inside a Promise) and log the data using async/await.
+
+
+// Create two promises, one resolves in 2 seconds and one rejects in 3 seconds. Handle them properly with .then/.catch.
+
+let p12 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve(23);
+
+    },2000);
+
+}).then((value)=>{
+    console.log(value);
+
+}).catch((err)=>{
+    conole.log(err, "this is error");
+});
+let p2 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        reject(23);
+    },3000);
+}).then((value)=>{
+    console.log(value);
+}).catch((err)=>{
+    console.log(err,"this is error");
+});
+
+// Write an async function to fetch two different API endpoints sequentially.
+// async function greet(){
+//     let a fetch("")
+// }
+// DOM
+
+// Change the background color of a page when a button is clicked.
+
+// Create a simple todo list where you can add and delete items dynamically.
+
+// On mouse hover over an element, change its text.
+
+let a12  = document.getElementsByTagName("body");
+document.body.style.backgroundColor = "red";
+
+//todo list
+let btn1 = document.getElementsByClassName("inpt")
+let btn2 = document.getElementsByClassName("add");
+let btn3 = document.getElementsByClassName("delete");
+
+btn1.addEventListener("click", function(){
+    input.value+= "value";
+});
+btn2.addEventListener("click",function(){
+    input.value+= "";
+});
+
+
