@@ -1061,505 +1061,565 @@
 //     name5: "khani",
 //     language: "javascript",
 
-//     run: () =>{
-//         alert("self run 1")
-//     }
-// }
-// console.log(obj2);
-// //let obj = {
-// //     name2: "hashim",
-// //     language: "javascript",
 // //     run: () =>{
-// //         alert("self run")
-
+// //         alert("self run 1")
 // //     }
 // // }
-// // console.log(obj);
+// // console.log(obj2);
+// // //let obj = {
+// // //     name2: "hashim",
+// // //     language: "javascript",
+// // //     run: () =>{
+// // //         alert("self run")
 
-// let p  = {
-//     run: ()=>{
+// // //     }
+// // // }
+// // // console.log(obj);
 
-//     alert("self run");
-//     }
+// // let p  = {
+// //     run: ()=>{
 
-
-// }
-//let p ={
-//     run: ()=>{
-//         alert("run");
-//     }
-
-// }
-// p.__proto__ ={
-//     name1: "jackie"
-// }
-// obj.__proto__ =p;
-// obj.run();
-// console.log(obj.name1);
-// p.__proto__ ={
-//     name3 : "jacobi"
-// }
-// obj2.__proto__ = p;
-// obj2.run();
-// console.log(obj2.name3);
-
-// //
-// class RailwayForm{
-//     submit(){
-//         alert("this is submitted");
-//     }
-//     cancel(){
-//         alert("this is cancel");
-//     }
+// //     alert("self run");
+// //     }
 
 
-// }
-// let harry =new RailwayForm();
-// let rohan = new RailwayForm();
+// // }
+// //let p ={
+// //     run: ()=>{
+// //         alert("run");
+// //     }
 
-// harry.submit();
-// rohan.cancel();
-// // Objects: Honda, Toyota, Tesla
-// // 👉 The class defines what every car has (engine, color, model) and what every car can do (start, stop).
-// class car{
-//     constructor(name){
-//         this.name = name;
-//     }
-//     start(){
-//         alert(this.name +  "  car is start");
-//     }
-//     stop(){
+// // }
+// // p.__proto__ ={
+// //     name1: "jackie"
+// // }
+// // obj.__proto__ =p;
+// // obj.run();
+// // console.log(obj.name1);
+// // p.__proto__ ={
+// //     name3 : "jacobi"
+// // }
+// // obj2.__proto__ = p;
+// // obj2.run();
+// // console.log(obj2.name3);
 
-//         alert(this.name +  "  car is stopped");
-//     }
-// }
-// let honda = new car("honda");
-// let tesla = new car("tesla");
-// let toyota = new car("toyota");
-
-// honda.start();
-// tesla.stop();
-// toyota.start();
-
-
-// // class 
-// //lass: Person
-// // Objects: Ali, Sara, John
-// // 👉 The class defines that every person has (name, age) and can do (speak, walk).
-
-// class person{
-//     constructor(name, age){
-//         this.name = name;
-//         this.age = age;
-
-//     }
-//     speak(){
-//         alert(this.name +  "is speaking .age:" + this.age);
-//     }
-//     walk(){
-//         alert(this.name + "is walking  .age:" + this.age);
-//     }
-
-// }
-// let ahmad = new person("ahmad", 20);
-
-// let sahal = new person("sahal", 45);
-
-// let lala = new person("lala",40);
+// // //
+// // class RailwayForm{
+// //     submit(){
+// //         alert("this is submitted");
+// //     }
+// //     cancel(){
+// //         alert("this is cancel");
+// //     }
 
 
-// ahmad.speak();
-// lala.walk();
-// sahal.speak();
-// /////////\\\\\\\\
+// // }
+// // let harry =new RailwayForm();
+// // let rohan = new RailwayForm();
 
-// class colony{
-//     constructor (name, No, address, RoadNumber){
-//         this.name = name;
-//         this.address  = address;
-//         this.No =  No;
-//         this.RoadNumber= RoadNumber;
+// // harry.submit();
+// // rohan.cancel();
+// // // Objects: Honda, Toyota, Tesla
+// // // 👉 The class defines what every car has (engine, color, model) and what every car can do (start, stop).
+// // class car{
+// //     constructor(name){
+// //         this.name = name;
+// //     }
+// //     start(){
+// //         alert(this.name +  "  car is start");
+// //     }
+// //     stop(){
 
+// //         alert(this.name +  "  car is stopped");
+// //     }
+// // }
+// // let honda = new car("honda");
+// // let tesla = new car("tesla");
+// // let toyota = new car("toyota");
 
-//     }
-//     pick_address(){
-//          alert(this.name + "to pick address:" + this.address);
-//     }
-//     book_plat(){
-//        alert(this.name + "to book plat on roadnumber" + this.RoadNumber);
-//     }
-//     walkon_road(){
-//         alert(this.No + "this is no palt is full" + this.address);
-//     }
-
-
-// }
-
-// let colony_book  = new colony("haarry","front_in_web",120, 0.91);
-// colony_book.pick_address();
-// colony_book.book_plat();
-// colony_book.walkon_road();
+// // honda.start();
+// // tesla.stop();
+// // toyota.start();
 
 
-// //
+// // // class 
+// // //lass: Person
+// // // Objects: Ali, Sara, John
+// // // 👉 The class defines that every person has (name, age) and can do (speak, walk).
 
-// class animal {
-//     constructor(name, sound){
-//         this.name = name;
-//         this.sound = sound;
-//     }
+// // class person{
+// //     constructor(name, age){
+// //         this.name = name;
+// //         this.age = age;
 
-//     runing(){
-//         alert(this.name +"run after eat" );
-//     }
-//     eating(){
-//         alert(this.name +"they eat grass" + this.sound);
-//     }
+// //     }
+// //     speak(){
+// //         alert(this.name +  "is speaking .age:" + this.age);
+// //     }
+// //     walk(){
+// //         alert(this.name + "is walking  .age:" + this.age);
+// //     }
 
-// }
-// class Monkey extends animal{
-//     banana(){
-//         alert(this.name + "eat bannana");
-//     }
-//     hide(){
-//         alert("this is thorw error");
-//     }
-// }
+// // }
+// // let ahmad = new person("ahmad", 20);
 
-// let buffelo = new animal("buffelo", "awaz_zig_zag");
-// let mon = new Monkey("chimpo" , "banana");
-// buffelo.runing();
-// buffelo.eating();
-// mon.banana();
-// mon.hide();
-// //\\
-// class employee{
-//     constuctor(name){
-//         console.log("this is employee name..");
-//         this.name = name;
-//     }
-//     login(){
-//         console.log("you are login.....");
-//     }
-//     logout(){
+// // let sahal = new person("sahal", 45);
 
-//         console.log("you are logout.....");
-//     }
+// // let lala = new person("lala",40);
 
-//     requestLeave(Leave){
-//        console.log(`you are requested for leave${Leave}.... this is on your end`);
-//     }
 
-// }
-// class programmer extends employee{
-//     constuctor(name){
-//         console.log(`${name}.this is employee name..`);
-//         this.name = name;
+// // ahmad.speak();
+// // lala.walk();
+// // sahal.speak();
+// // /////////\\\\\\\\
+
+// // class colony{
+// //     constructor (name, No, address, RoadNumber){
+// //         this.name = name;
+// //         this.address  = address;
+// //         this.No =  No;
+// //         this.RoadNumber= RoadNumber;
+
+
+// //     }
+// //     pick_address(){
+// //          alert(this.name + "to pick address:" + this.address);
+// //     }
+// //     book_plat(){
+// //        alert(this.name + "to book plat on roadnumber" + this.RoadNumber);
+// //     }
+// //     walkon_road(){
+// //         alert(this.No + "this is no palt is full" + this.address);
+// //     }
+
+
+// // }
+
+// // let colony_book  = new colony("haarry","front_in_web",120, 0.91);
+// // colony_book.pick_address();
+// // colony_book.book_plat();
+// // colony_book.walkon_road();
+
+
+// // //
+
+// // class animal {
+// //     constructor(name, sound){
+// //         this.name = name;
+// //         this.sound = sound;
+// //     }
+
+// //     runing(){
+// //         alert(this.name +"run after eat" );
+// //     }
+// //     eating(){
+// //         alert(this.name +"they eat grass" + this.sound);
+// //     }
+
+// // }
+// // class Monkey extends animal{
+// //     banana(){
+// //         alert(this.name + "eat bannana");
+// //     }
+// //     hide(){
+// //         alert("this is thorw error");
+// //     }
+// // }
+
+// // let buffelo = new animal("buffelo", "awaz_zig_zag");
+// // let mon = new Monkey("chimpo" , "banana");
+// // buffelo.runing();
+// // buffelo.eating();
+// // mon.banana();
+// // mon.hide();
+// // //\\
+// // class employee{
+// //     constuctor(name){
+// //         console.log("this is employee name..");
+// //         this.name = name;
+// //     }
+// //     login(){
+// //         console.log("you are login.....");
+// //     }
+// //     logout(){
+
+// //         console.log("you are logout.....");
+// //     }
+
+// //     requestLeave(Leave){
+// //        console.log(`you are requested for leave${Leave}.... this is on your end`);
+// //     }
+
+// // }
+// // class programmer extends employee{
+// //     constuctor(name){
+// //         console.log(`${name}.this is employee name..`);
+// //         this.name = name;
          
-//     }
-//     requestcoffee(x){
-//         console.log(`to request a coffee ${x}.`);
-//     }
-//     requestLeave(Leave){
-//         super.requestLeave(4)
-//        // console.log(`the employee to request you ${Leave+1}`);
-//        console.log("one extra is granted");
-//     }
-// }
-// let e = new programmer("harry");
-// e.login();
-// e.requestLeave(3);
+// //     }
+// //     requestcoffee(x){
+// //         console.log(`to request a coffee ${x}.`);
+// //     }
+// //     requestLeave(Leave){
+// //         super.requestLeave(4)
+// //        // console.log(`the employee to request you ${Leave+1}`);
+// //        console.log("one extra is granted");
+// //     }
+// // }
+// // let e = new programmer("harry");
+// // e.login();
+// // e.requestLeave(3);
 
-// // async and await
-// async function greet(){
-//   let p10  = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         resolve("this is promise");
-//     },2000);
-//   })
-//   let p11 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//          reject("this is error");
-//     },3000);
-//   });
-//   try{
-//   let value1 =  await p10;
-//   console.log(value1);
+// // // async and await
+// // async function greet(){
+// //   let p10  = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         resolve("this is promise");
+// //     },2000);
+// //   })
+// //   let p11 = new Promise((resolve,reject)=>{
+// //     setTimeout(()=>{
+// //          reject("this is error");
+// //     },3000);
+// //   });
+// //   try{
+// //   let value1 =  await p10;
+// //   console.log(value1);
 
-//   let value2 = await p11;
-//   console.log(value2);
-//   }
-//   catch(err){
-//       console.log("this is an 1st error", err);
-//   }
-// }
-// greet();
-// //promise
-// let p23 = new Promise((resolve, reject)=>{
-//    setTimeout(()=>{
-//     resolve("this is resolve");
-//    },2000);
-// })
-// let p22 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         reject("this is error throw");
-//     },3000);
-// });
-// p23.then((value)=>{
-//     console.log(value);
-// }).catch((err)=>{
-//     console.log("this is error fix", err);
-// });
+// //   let value2 = await p11;
+// //   console.log(value2);
+// //   }
+// //   catch(err){
+// //       console.log("this is an 1st error", err);
+// //   }
+// // }
+// // greet();
+// // //promise
+// // let p23 = new Promise((resolve, reject)=>{
+// //    setTimeout(()=>{
+// //     resolve("this is resolve");
+// //    },2000);
+// // })
+// // let p22 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         reject("this is error throw");
+// //     },3000);
+// // });
+// // p23.then((value)=>{
+// //     console.log(value);
+// // }).catch((err)=>{
+// //     console.log("this is error fix", err);
+// // });
 
-// p22.then((value)=>{
-//     console.log(value);
+// // p22.then((value)=>{
+// //     console.log(value);
 
-// }).catch((err)=>{
-//     console.log("this is second catch", err);
-// });
+// // }).catch((err)=>{
+// //     console.log("this is second catch", err);
+// // });
 
-// class person2{
-//     constructor(name, age){
-//         this.name = name;
-//         this.age = age;
-//     }
-//    login(){
-//     alert(this.age +"this is login"+ this.name);
-//    }   
-//    sinin(){
-//     alert(this.name+"this is signin"+this.age);
-//    }
+// // class person2{
+// //     constructor(name, age){
+// //         this.name = name;
+// //         this.age = age;
+// //     }
+// //    login(){
+// //     alert(this.age +"this is login"+ this.name);
+// //    }   
+// //    sinin(){
+// //     alert(this.name+"this is signin"+this.age);
+// //    }
  
-// }
-// let p1 = new person2("hashim", 13);
-// p1.login();
-// p1.sinin(); 
-// //event loop
-// console.log(13);
-// setTimeout(()=>{
-//     console.log(12);
-// },2000);
-// console.log(14);
-// //destructuring
-// let arr = [12,34,65,65];
-// let [a,b,c,d] = arr;
-// console.log(a,b,c,d);
+// // }
+// // let p1 = new person2("hashim", 13);
+// // p1.login();
+// // p1.sinin(); 
+// // //event loop
+// // console.log(13);
+// // setTimeout(()=>{
+// //     console.log(12);
+// // },2000);
+// // console.log(14);
+// // //destructuring
+// // let arr = [12,34,65,65];
+// // let [a,b,c,d] = arr;
+// // console.log(a,b,c,d);
+
+// // //2nd example
+// // let array1 = [31,43,435,66];
+// // let [a1,b2,c1,d3] = array1;
+// // console.log(a1,b2,c1,d3);
+// // //3rd example
+// // let array3  = [12,342,463,753,897];
+// // let [q,...rest] = array3;
+// // console.log(q,rest); 
+
+// // //4th example 
+// // //object destructuring 
+
+// let {t,y} = {t:1, y:23};
+// console.log(t,y);
+// let arry = [12,43,654,321];
+// let obj1 = {...arry};
+// console.log(obj1);
+
+// // //IIFE
+// // (function (){
+// //     console.log(1200);
+// // })();
+
+
+// // //prototype
+
+// // let q2 ={
+// //     name2: "hahsim",
+// //     age: 12
+// // }
+
+
+// // console.log(q2);
+// // let p10 = {
+// //     run:()=>{
+// //         alert("run");
+// //     }
+
+// // }
+
+// // p10.__proto__={
+// //     name: "jacy",
+// // }
+
+// // q2.__proto__= p10;
+
+// // q2.run();
+// // console.log(q2.name);
+
+// // // How would you loop through numbers 1–100 and count how many are even?
+
+// // // How would you loop through an array and find duplicate values?
+
+// // // How would you stop a loop as soon as you find a specific element?
+
+// // // What problem requires nested loops to solve?
+// // let count = 0;
+// // for(let i=1; i<=100; i++){
+// //     if(i%2==0){
+// //         console.log("this is even", i);
+// //          count++;
+// //     }
+   
+// // }
+// // console.log(`this is even =`, count);
+// // // Print the multiplication table of a number entered by the user.
+// // let number1 = prompt("enter your choice number");
+// // let nomber1 = Number(number1);
+// // for(let i = 1; i<=10; i++){
+// //     console.log(`${nomber1}X${i}= ${nomber1*i}`);
+// // }
+// // // Create a pattern like this using loops:
+// // for(let i=7; i>=1; i--){
+// //     let row = "";
+// //     for (let j=1; j<=i; j++){
+// //         row+="*";
+// //     }
+// //     console.log(row);
+// // }
+// // // Conditions
+
+// // // Take a number input from user and check if it is positive, negative, or zero.
+
+// // // Take a grade (A, B, C, D, F) and print the corresponding description.
+
+// // // Check if a number is divisible by 3 and 5, print different messages accordingly.
+
+// // let num = prompt("enter a number");
+// // let nom = Number(num);
+// // if(nom>1){
+// //     console.log("this is positive", nom);
+// // }
+// // else if(nom<1){
+// //     console.log("this is negative");
+// // }
+// // else{
+// //     console.log("this is zero");
+// // }
+
+// // ////....///,,,,,.....
+// // let grade = prompt("enter the grade");
+// // if(grade==="A"){
+// //     console.log("this is grade and pass");
+// // }
+// // else if(grade==="B"){
+// //     console.log("this is grade B and pass between.");
+// // }
+// // else{
+// //     console.log("other grade");
+// // }
+// // //...,,,////,,,...///
+// // let a13 = prompt("enter your number");
+// // if(a13%3==0){
+// //     console.log("this is divisible by 3");
+// // }
+// // else if(a13%5==0){
+// //     console.log("this is divisible by 5");
+// // }
+// // // Async / Await & Promise
+
+// // // Simulate fetching user data from a server (use setTimeout inside a Promise) and log the data using async/await.
+
+
+// // // Create two promises, one resolves in 2 seconds and one rejects in 3 seconds. Handle them properly with .then/.catch.
+
+// // let p12 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         resolve(23);
+
+// //     },2000);
+
+// // }).then((value)=>{
+// //     console.log(value);
+
+// // }).catch((err)=>{
+// //     conole.log(err, "this is error");
+// // });
+// // let p2 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         reject(23);
+// //     },3000);
+// // }).then((value)=>{
+// //     console.log(value);
+// // }).catch((err)=>{
+// //     console.log(err,"this is error");
+// // });
+
+// // // Write an async function to fetch two different API endpoints sequentially.
+// // // async function greet(){
+// // //     let a fetch("")
+// // // }
+// // // DOM
+
+// // // Change the background color of a page when a button is clicked.
+
+// // // Create a simple todo list where you can add and delete items dynamically.
+
+// // // On mouse hover over an element, change its text.
+
+// // // let a12  = document.getElementsByTagName("body");
+// // // document.body.style.backgroundColor = "red";
+
+// // //todo list
+// // let inpt = document.getElementsByClassName(".inpt")[0];
+// // let btn2 = document.getElementsByClassName(".add")[0];
+// // let btn3 = document.getElementsByClassName(".delete")[0];
+
+// // btn2.addEventListener("click", function(){
+// //     inpt.value += "value";
+// // });
+// // btn3.addEventListener("click",function(){
+// //     inpt.value = "";
+// // });
+// // console.log(btn2);
+// // Destructuring
+
+// // Destructure values from an array [1,2,3] into variables a,b,c.
+
+// // Destructure properties name and age from an object {name:"Ali", age:25}.
+// //1st example
+// let array12 = [12,43,13];
+// let [a0,b1,c3,d2] = array12;
+// console.log(a0,b1,c3,d2);
 
 // //2nd example
-// let array1 = [31,43,435,66];
-// let [a1,b2,c1,d3] = array1;
-// console.log(a1,b2,c1,d3);
-// //3rd example
-// let array3  = [12,342,463,753,897];
-// let [q,...rest] = array3;
-// console.log(q,rest); 
+// let {name, age} = {
+//     name:"ali",
+//     age: 25
+// };
+// console.log(name, age);
+// let obj = [...array12]
+// console.log(obj);
 
-// //4th example 
-// //object destructuring 
+// // IIFE
 
-let {t,y} = {t:1, y:23};
-console.log(t,y);
-let arry = [12,43,654,321];
-let obj1 = {...arry};
-console.log(obj1);
+// // Create an IIFE that prints “Hello World” immediately.
 
-// //IIFE
-// (function (){
-//     console.log(1200);
+// // Create an IIFE that calculates and logs the sum of two numbers given as arguments.
+// (function greet(){
+//     let a = "hello world";
+//     console.log(a);
 // })();
 
 
-// //prototype
-
-// let q2 ={
-//     name2: "hahsim",
-//     age: 12
-// }
-
-
-// console.log(q2);
-// let p10 = {
-//     run:()=>{
-//         alert("run");
-//     }
-
-// }
-
-// p10.__proto__={
-//     name: "jacy",
-// }
-
-// q2.__proto__= p10;
-
-// q2.run();
-// console.log(q2.name);
-
-// // How would you loop through numbers 1–100 and count how many are even?
-
-// // How would you loop through an array and find duplicate values?
-
-// // How would you stop a loop as soon as you find a specific element?
-
-// // What problem requires nested loops to solve?
-// let count = 0;
-// for(let i=1; i<=100; i++){
-//     if(i%2==0){
-//         console.log("this is even", i);
-//          count++;
-//     }
+// (function claculate(a,b){
+//     console.log( a+b);
    
-// }
-// console.log(`this is even =`, count);
-// // Print the multiplication table of a number entered by the user.
-// let number1 = prompt("enter your choice number");
-// let nomber1 = Number(number1);
-// for(let i = 1; i<=10; i++){
-//     console.log(`${nomber1}X${i}= ${nomber1*i}`);
-// }
-// // Create a pattern like this using loops:
-// for(let i=7; i>=1; i--){
-//     let row = "";
-//     for (let j=1; j<=i; j++){
-//         row+="*";
-//     }
-//     console.log(row);
-// }
-// // Conditions
+// })(21,45);
 
-// // Take a number input from user and check if it is positive, negative, or zero.
+// // 10. Hoisting
+// var a;
+// console.log(a);
+// a=10;
+// console.log(a);
 
-// // Take a grade (A, B, C, D, F) and print the corresponding description.
-
-// // Check if a number is divisible by 3 and 5, print different messages accordingly.
-
-// let num = prompt("enter a number");
-// let nom = Number(num);
-// if(nom>1){
-//     console.log("this is positive", nom);
-// }
-// else if(nom<1){
-//     console.log("this is negative");
-// }
-// else{
-//     console.log("this is zero");
-// }
-
-// ////....///,,,,,.....
-// let grade = prompt("enter the grade");
-// if(grade==="A"){
-//     console.log("this is grade and pass");
-// }
-// else if(grade==="B"){
-//     console.log("this is grade B and pass between.");
-// }
-// else{
-//     console.log("other grade");
-// }
-// //...,,,////,,,...///
-// let a13 = prompt("enter your number");
-// if(a13%3==0){
-//     console.log("this is divisible by 3");
-// }
-// else if(a13%5==0){
-//     console.log("this is divisible by 5");
-// }
-// // Async / Await & Promise
-
-// // Simulate fetching user data from a server (use setTimeout inside a Promise) and log the data using async/await.
+// //2nd question
+// console.log(bc);
+// var bc = 12;
 
 
-// // Create two promises, one resolves in 2 seconds and one rejects in 3 seconds. Handle them properly with .then/.catch.
+/////////\\\\\\\  closure
 
-// let p12 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         resolve(23);
+function greet(){
+    let count = 0;
 
-//     },2000);
+   function seet(){
+     count++;
+       console.log(count);    
+ }   
+       return seet;
+}
+const fun =  greet()
+fun();
+fun();
+fun();
 
-// }).then((value)=>{
-//     console.log(value);
+//hositing
 
-// }).catch((err)=>{
-//     conole.log(err, "this is error");
-// });
-// let p2 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         reject(23);
-//     },3000);
-// }).then((value)=>{
-//     console.log(value);
-// }).catch((err)=>{
-//     console.log(err,"this is error");
-// });
-
-// // Write an async function to fetch two different API endpoints sequentially.
-// // async function greet(){
-// //     let a fetch("")
-// // }
-// // DOM
-
-// // Change the background color of a page when a button is clicked.
-
-// // Create a simple todo list where you can add and delete items dynamically.
-
-// // On mouse hover over an element, change its text.
-
-// // let a12  = document.getElementsByTagName("body");
-// // document.body.style.backgroundColor = "red";
-
-// //todo list
-// let inpt = document.getElementsByClassName(".inpt")[0];
-// let btn2 = document.getElementsByClassName(".add")[0];
-// let btn3 = document.getElementsByClassName(".delete")[0];
-
-// btn2.addEventListener("click", function(){
-//     inpt.value += "value";
-// });
-// btn3.addEventListener("click",function(){
-//     inpt.value = "";
-// });
-// console.log(btn2);
-// Destructuring
-
-// Destructure values from an array [1,2,3] into variables a,b,c.
-
-// Destructure properties name and age from an object {name:"Ali", age:25}.
-//1st example
-let array12 = [12,43,13];
-let [a0,b1,c3,d2] = array12;
-console.log(a0,b1,c3,d2);
-
-//2nd example
-let {name, age} = {
-    name:"ali",
-    age: 25
-};
-console.log(name, age);
-let obj = [...array12]
-console.log(obj);
-
-// IIFE
-
-// Create an IIFE that prints “Hello World” immediately.
-
-// Create an IIFE that calculates and logs the sum of two numbers given as arguments.
-(function greet(){
-    let a = "hello world";
-    console.log(a);
-})();
-
-
-(function claculate(a,b){
-    console.log( a+b);
-   
-})(21,45);
-
-// 10. Hoisting
-var a;
+var  a;
 console.log(a);
-a=10;
+a = 10;
 console.log(a);
 
-//2nd question
-console.log(bc);
-var bc = 12;
+let a12 ={
+    name: "hashim",
+    language: "javascript"
+
+}
+console.log(a12);
+
+let p = {
+    run:()=>{
+        alert("run");
+    }
+}
+p.__proto__ = {
+    name2: "jackie"
+}
+
+a12.__proto__= p;
+a12.run();
+
+const p89 = fetch("https://dog.ceo/api/breeds/image/random");
+p89.then((value1)=>{
+    return value1.json();
+});
+p89.then((value2)=>{
+    console.log(value2);
+});
+
+let a21 = ("ok");
+document.cookies = a21;
+console.log(document.cookies);
+
+let aa43 = prompt("enter your key");
+let b56 =  prompt("enter your value");
+
+console.log(localStorage.setItem(aa43, b56));
