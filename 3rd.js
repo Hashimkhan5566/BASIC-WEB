@@ -1623,3 +1623,10 @@ let aa43 = prompt("enter your key");
 let b56 =  prompt("enter your value");
 
 console.log(localStorage.setItem(aa43, b56));
+
+let key2 = prompt("you write key");
+
+let value2 =  prompt("you write value");
+
+console.log(localStorage.setItem(key2, value2));
+console.log(localStorage.getItem(key2, value2));
