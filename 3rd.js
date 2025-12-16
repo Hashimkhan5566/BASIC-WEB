@@ -1576,11 +1576,6 @@ function greet(){
  }   
        return seet;
 }
-const fun =  greet()
-fun();
-fun();
-fun();
-
 //hositing
 
 var  a;
@@ -1630,3 +1625,37 @@ let value2 =  prompt("you write value");
 
 console.log(localStorage.setItem(key2, value2));
 console.log(localStorage.getItem(key2, value2));
+
+function greet(a,b){
+   return a+b;
+
+}
+
+console.log(greet(12,34));
+
+let great=(a,b)=>{
+return a+b;  
+}
+console.log(great(34, 56));
+
+let reel =(a,b)=> a+b;
+console.log(reel(23,76));
+ 
+(async()=>{
+   let promise = new Promise((resolve,reject)=>{
+       setTimeout(() => {
+        resolve("this is IIFE");
+       },2000);
+   }).then((value)=>{
+        console.log(value);
+   }).catch((err)=>{
+      console.log(err);
+   })
+})();
+
+function graet(a,b,callback){
+   callback();
+   console.log(a,b);
+}graet(12,34, function(){
+  console.log("i am callback");
+});
