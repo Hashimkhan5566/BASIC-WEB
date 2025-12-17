@@ -1659,3 +1659,32 @@ function graet(a,b,callback){
 }graet(12,34, function(){
   console.log("i am callback");
 });
+let array = [12,32,43,64];
+console.log(array);
+
+let array2 = [12,5345,654,64,6432,6543 ] 
+for(array32 of array2){
+    console.log(array32);
+}
+
+let array43 =  [12,34324,543,1454,434];
+console.log(array43.push(12));
+console.log(array43.shift(12));
+console.log(array43.unshift(12));
+console.log(array43.pop(12));
+
+let string = ["this is array to convert from array to string"];
+console.log(string.toString());
+console.log(array43.join("--"));
+console.log(string.concat(array43));
+console.log(array43.reverse());
+console.log(array43.slice(1,5));
+console.log(array43.splice(0,1,23,32));
+
+let array56 = [10,9,8,7,6,5,4,3,2,1];
+array56.sort((a,b)=>a - b);
+console.log(array56);
+
+let array76 = [1,2,3,4,5,6,7,8,9,10];
+array76.sort((b, a)=>b-a);
+console.log(array76);
