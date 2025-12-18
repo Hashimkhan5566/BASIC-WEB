@@ -1688,3 +1688,9 @@ console.log(array56);
 let array76 = [1,2,3,4,5,6,7,8,9,10];
 array76.sort((b, a)=>b-a);
 console.log(array76);
+
+
+
+array43.forEach((element)=>{
+    console.log(array43);
+})
