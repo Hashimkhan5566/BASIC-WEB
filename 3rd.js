@@ -1687,10 +1687,29 @@ console.log(array56);
 
 let array76 = [1,2,3,4,5,6,7,8,9,10];
 array76.sort((b, a)=>b-a);
-console.log(array76);
+console.log(array76);                                                                 
 
 
 
-array43.forEach((element)=>{
-    console.log(array43);
+let array12 = [12,56,98,9];
+let array34 = array12.forEach((value)=>{
+    console.log(value);
+});
+
+let array456 = [67,89,9,45];
+let array67  = array456.map((value)=>{
+    return value*7;
 })
+console.log(array67);
+
+let array678 = [543,908,786];
+let array5678 = array678.filter((value)=>{
+  return value>990;
+})
+console.log(array5678);
+
+let array89 = [90,67,453,655];
+let array098 = array89.reduce((value1, value2)=>{
+    return value1+value2;
+})
+console.log(array098);
