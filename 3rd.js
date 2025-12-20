@@ -1713,3 +1713,72 @@ let array098 = array89.reduce((value1, value2)=>{
     return value1+value2;
 })
 console.log(array098);
+
+let string34 = "they are string";
+console.log(string34.length);
+
+let str = "this is string";
+
+console.log(str.slice(0,3));
+console.log(str.replace("this is string","this is replace method"));
+//length – get text length (form validation)
+
+// slice() – cut part of text (preview/summary)
+
+// substring() – extract text by index (UI text control)
+let str2 = "this is string";
+console.log(str2.substring(0,1));
+
+// substr() – extract fixed-length text (legacy support)
+
+let str5 = "this is string";
+console.log(str5.substr(0,5));
+
+// replace() – change text (sanitize input)
+
+// replaceAll() – replace all matches (cleanup content)
+
+let str4 = "this is string and this is javascript";
+console.log(str4.replaceAll("this", "that"));
+
+// toUpperCase() – convert to uppercase (UI formatting)
+
+let str6 = "string";
+console.log(str6.toUpperCase());
+
+// toLowerCase() – convert to lowercase (case-insensitive compare)
+let str8 = "THIS IS STRING";
+
+console.log(str8.toLowerCase());
+
+// trim() – remove extra spaces (form input cleaning)
+let str9 = "   this is string  ";
+console.log(str9.trim);
+// trimStart() – remove leading spaces (user input)
+let str10 = "   hello";
+console.log(str10.trimStart());
+// trimEnd() – remove trailing spaces (user input)
+let str11 = "    this is string   ";
+console.log(str11.trimEnd());
+// includes() – check word existence (search/filter)
+let str12 = "this is string";
+console.log(str12.includes(str));
+// startsWith() – validate prefix (URL/email check)
+let str13 = "this is string 12   ";
+console.log(str13.startsWith("this"));
+
+// endsWith() – validate suffix (.com, .jpg)
+let str45 ="@this is";
+console.log(str45.endsWith("is"));
+// split() – convert string to array (tags, CSV)
+let str56 = "this is string ";
+console.log(str56.split());
+// join() – convert array to string (display text)
+// let str23 = "that are string";
+// console.log(str23.join());
+// charAt() – get character at index (masking)
+let str459 = "that are url";
+console.log(str459.charAt(7));
+// charCodeAt() – get character code (encoding)
+let str457 = "you are string";
+console.log(str457.charCodeAt("y"));
