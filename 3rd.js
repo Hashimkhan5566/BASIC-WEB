@@ -1773,12 +1773,10 @@ console.log(str45.endsWith("is"));
 // split() – convert string to array (tags, CSV)
 let str56 = "this is string ";
 console.log(str56.split());
-// join() – convert array to string (display text)
-// let str23 = "that are string";
-// console.log(str23.join());
 // charAt() – get character at index (masking)
 let str459 = "that are url";
 console.log(str459.charAt(7));
 // charCodeAt() – get character code (encoding)
 let str457 = "you are string";
 console.log(str457.charCodeAt("y"));
+
