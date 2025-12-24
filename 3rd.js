@@ -1780,3 +1780,19 @@ console.log(str459.charAt(7));
 let str457 = "you are string";
 console.log(str457.charCodeAt("y"));
 
+
+let number = Math.floor(Math.random()*100)+1;
+
+let guess ;
+while(guess!==number){
+    guess= Number(prompt("enter you guess number"));
+    if(guess===number){
+        console.log("you guess number correct", number);
+    }
+    else if(guess>number){
+        console.log("you guess number is high");
+    }
+    else{
+        console.log("you are guess number is low");
+        }
+}
