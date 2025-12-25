@@ -1781,7 +1781,7 @@ let str457 = "you are string";
 console.log(str457.charCodeAt("y"));
 
 
-let number = Math.floor(Math.random()*100)+1;
+let number = Math.floor(Math.random()*10)+1;
 
 let guess ;
 while(guess!==number){
@@ -1796,3 +1796,10 @@ while(guess!==number){
         console.log("you are guess number is low");
         }
 }
+
+let array667 = [12,37,12,12,37,37,63,63,90,90,21,21];
+let array67dup = array667.filter((value, index)=>{
+    return array667.indexOf(value)===index;
+});
+console.log(array667, array67dup);
+
