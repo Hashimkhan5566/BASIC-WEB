@@ -1790,10 +1790,10 @@ while(guess!==number){
         console.log("you guess number correct", number);
     }
     else if(guess>number){
-        console.log("you guess number is high");
+        console.log("you guess number is high",number);
     }
     else{
-        console.log("you are guess number is low");
+        console.log("you are guess number is low",number);
         }
 }
 
@@ -1802,4 +1802,34 @@ let array67dup = array667.filter((value, index)=>{
     return array667.indexOf(value)===index;
 });
 console.log(array667, array67dup);
+//Print numbers from 20 to 100
+
+for(let i=20; i<=100; i++){
+    console.log(i);
+}
+
+//Print even numbers between 20–100
+for(let i=20; i<=100;i++){
+    if(i%2==0){
+        console.log(i, "even");
+    }
+}
+
+
+// Sum of numbers from 20–100
+let sum2 =0;
+for(let i=20; i<=100; i++){
+   
+   sum2+=i;
+   console.log(sum2);
+}
+
+// Count digits of a number
+let num = 3456;
+let count = 0;
+while(num>0){
+    count++;
+    num = Math.floor(num/10);
+}
+console.log(count);
 
