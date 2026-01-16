@@ -1833,3 +1833,80 @@ while(num>0){
 }
 console.log(count);
 
+//basic
+let s12 = 12;
+console.log(s12);
+
+const r = 12;
+console.log(r);
+
+const r1 = 23;
+console.log(r1);
+
+var a = 12;
+console.log(a);
+
+let a1 = prompt("enter your number");
+let b = parseInt(a1);
+if(b<=12){
+    console.log("this is agree");
+}
+else if(b>12){
+    console.log("this is not agree");
+}
+console.log(b);
+
+let ab = prompt("enter your number");
+for(ab=0; ab<=12; ab++ ){
+    console.log(ab);
+}
+console.log(ab);
+
+let bc = prompt("enter your number");
+let bd = parseInt(bc);
+while(bc<10){
+    bc++;
+}
+console.log(bc);
+let qa = 12;
+let qd = 23;  
+function name1(qd, qa){
+  return qd-qa;
+
+}
+console.log(name1(qa,qd));
+
+let abc = "this is string";
+console.log(abc);
+
+
+let uppercase = "this is string";
+console.log(uppercase.toUpperCase());
+
+let lowercase = "this is lowercase";
+console.log(lowercase.toLowerCase());
+
+
+let abcd = "this is string";
+console.log(abcd.slice(1,2));
+
+let abcde = "this is string";
+console.log(abcde.length);
+
+let abcdef = "    this   is    string   ";
+console.log(abcdef.trim());
+
+let abcdefg = "    this is string";
+console.log(abcdefg.trimStart());
+let abcdefghi = "    this is string     ";
+console.log(abcdefghi.trimEnd());
+
+let abcdefgh = "this is string";
+console.log(abcdefgh.includes("is"));
+
+
+
+
+
+
+
