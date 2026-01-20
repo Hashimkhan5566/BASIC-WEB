@@ -1898,15 +1898,60 @@ console.log(abcdef.trim());
 
 let abcdefg = "    this is string";
 console.log(abcdefg.trimStart());
-let abcdefghi = "    this is string     ";
+let abcdefghi = "this is string     ";
 console.log(abcdefghi.trimEnd());
 
 let abcdefgh = "this is string";
 console.log(abcdefgh.includes("is"));
 
 
+//basic practice on question
+//Reverse a number
+
+let numbert   = 1234;
+let reverse = 0;
+
+while(numbert>0){
+    let digit = numbert%10;
+    reverse = reverse *10 + digit;
+    numbert = Math.floor(numbert/10);
+}
+console.log(reverse);
+
+//Sum of digits
+
+let number45 = 678;
+let sum = 0;
+while(number45>0){
+  let digit = number45%10;
+  sum = sum%10+digit;
+  number45=  Math.floor(number45/10);
+}
+console.log(sum);
+
+//basic half js array
+
+let array102 = [12,45,"hasim" , 34, "khan", "i", 12, "am", "13", "number" ];
+console.log(array102.shift());
+console.log(array102.unshift());
+let array23 = [12,43,56,34,99,28,55,1,3];
+console.log(array23.splice(0,1,23,44));
 
 
+let array24 = [12,443,544,54,23,67,85,4];
+console.log(array24.push());
+console.log(array23.pop());
+
+
+let array45 = [12,43,67,34,94];
+console.log(array45.length);
+
+let array49 = [12,34,54,124,6];
+console.log(array49);
+let array490 = array49.filter(()=>{
+  
+})
+console.log(arry490);
 
 
 
