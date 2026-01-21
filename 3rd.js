@@ -1946,12 +1946,18 @@ console.log(array23.pop());
 let array45 = [12,43,67,34,94];
 console.log(array45.length);
 
-let array49 = [12,34,54,124,6];
-console.log(array49);
-let array490 = array49.filter(()=>{
-  
-})
-console.log(arry490);
+let a708 = [1,2,43,44];
+let a102 = a708.map((value)=>{
+    return value+1;
+});
+console.log(a102);
 
 
+let arrayt56= [123,453,1254,653];
+arrayt56.forEach((value, index,arr)=>{
+     if(index===1){
+        arr[index]= value+122;
+     }
+});
+console.log(arrayt56);
 
