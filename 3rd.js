@@ -1960,4 +1960,82 @@ arrayt56.forEach((value, index,arr)=>{
      }
 });
 console.log(arrayt56);
+// Print numbers from 20 to 100
+for(let i=20; i<=100; i++){
+    console.log(i);
+}
+
+// Print even numbers between 20–100
+for(let i = 20; i<=100; i++){
+    if(i%2==0){
+        console.log("this is even number");
+    }
+    else{
+        console.log("this is od number");
+    }
+}
+// Print odd numbers between 20–100
+for(let i=20; i<=100; i++){
+    if(i%2==1){
+        console.log("this is odd");
+
+    }
+    else{
+       console.log("this is even");
+    }
+    
+}
+// Sum of numbers from 20–100
+let sum678 = 0;
+for(let i=20; i<=100; i++){
+    sum678+=i;
+
+}
+console.log(sum678);
+
+// Count digits of a number
+let numbers = 324509710;
+let counts78 = 0;
+while(numbers>0){
+    counts78++;
+    numbers= Math.floor(numbers/10);
+}
+console.log(numbers, counts78);
+
+// Reverse a number
+let numberss = 34456;
+let reversed = 0;
+while(numberss>0){
+    let digit = numberss % 10;
+    reversed = reversed * 10 + digit;
+    numberss = Math.floor(numberss/10);
+
+
+}
+console.log(reversed);
+
+
+// Palindrome number
+let numbersd =  prompt("enter your plaindrome numbers ");
+let numberid = parseInt(numbersd);
+let ioriginal = numberid;
+let reversedd = 0;
+while(numberid>0){
+   let digits = numberid%10;
+
+   reversedd = reversedd * 10 + digits;
+   numberid = Math.floor(numberid/10);
+}
+if(ioriginal==reversedd){
+    console.log("this is palindrome");
+}
+else{
+    console.log("this is not plaindrome");
+}
+
+// Prime number check
+
+// Print all primes between 20–100
+
+// Factorial of a number
 
