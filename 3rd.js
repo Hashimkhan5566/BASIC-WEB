@@ -2034,8 +2034,49 @@ else{
 }
 
 // Prime number check
+let numberprime = 7;
+let isprime = true;
+if(numberprime<=1){
+    isprime= false;
 
+}
+else{
+    for(let i=2 ; i<numberprime; i++){
+        if(numberprime%i===0){
+            isprime = false;
+            break;
+        }
+    }
+}
+if(isprime){
+    console.log("this is prime", isprime);
+}
+else{
+    console.log("this is not prime");
+}
 // Print all primes between 20–100
 
-// Factorial of a number
+for(let i=1; i<=100; i++){
+let iSprime = true;
 
+if(i<=1){
+    iSprime = false;
+}
+else{
+    for(let j = 2; j<i; j++){
+        if(i%j===0){
+        iSprime=false;
+        break;
+    }
+}
+}
+if(iSprime){
+    console.log("this is prime",i);
+}
+else{
+    console.log("this is not prime",i);
+}
+}
+
+
+// Factorial of a number
