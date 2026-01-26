@@ -2080,3 +2080,70 @@ else{
 
 
 // Factorial of a number
+
+
+let set = "this is a animal";
+setTimeout(()=>{
+    console.log(set);
+},5000);
+console.log(set);
+setInterval(() => {
+    console.log(set);
+}, 2000);
+
+function homework(subject, callback){
+    console.log('home work is done',subject);
+
+callback()
+}
+function finishhomework(){
+    console.log("finised homework");
+}
+homework("javascript",finishhomework);
+
+
+//callback
+function firstfunction(subject, callback){
+    console.log("this is function",subject);
+     callback();
+}
+function secondfunction(){
+    console.log("this is second function");
+}
+firstfunction("javascript",secondfunction);
+
+//hoisting
+let de ;
+console.log(de);
+de = 10;
+console.log(de);
+
+
+console.log(sw);
+var sw ;
+console.log(sw);
+sw =10;
+console.log(sw);
+
+
+///closure
+
+function declare(subject){
+    console.log("this is logg");
+
+function declaresecond(){
+    console.log("this is second", subject);
+  }
+  declaresecond();
+}
+declare("this is function inner not outer");
+
+//IIFE
+(function iife(){
+    let adg  = 12;
+    console.log("this is function", adg);
+})();
+
+
+
+
