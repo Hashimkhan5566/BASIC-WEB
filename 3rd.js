@@ -2139,10 +2139,33 @@ function declaresecond(){
 declare("this is function inner not outer");
 
 //IIFE
-(function iife(){
-    let adg  = 12;
-    console.log("this is function", adg);
-})();
+(function iife(a,b){
+    return a+b;
+})(12,43);
+
+let wo = {
+    name : "harry",
+    age :23,
+
+}
+console.log(wo);
+
+
+
+
+let a25 = {
+    run:()=>{
+        console.log("run");
+    }
+
+    
+}
+wo.__proto__ ={
+name : "jackie",
+    
+}
+wo.__proto__ = a25;
+a25.run();
 
 
 
