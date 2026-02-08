@@ -2223,3 +2223,16 @@ let c2;
  b2 = c2;
  console.log(a2,b2);
 
+//condition 
+
+let age = Number(prompt("enter your age"));
+if(isNaN(age)){
+    console.log("this is invalid input");
+
+}
+else if(age>=18){
+    console.log("this is valid for vote");
+}
+else {
+    console.log("this is not valide for vote");
+}
