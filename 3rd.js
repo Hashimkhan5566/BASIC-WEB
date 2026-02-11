@@ -2235,4 +2235,122 @@ else if(age>=18){
 }
 else {
     console.log("this is not valide for vote");
+
+
 }
+
+
+let math1 =  12.09;
+console.log(Math.ceil(12.09));
+
+let math2  = 12.009;
+console.log(Math.floor(12.009));
+
+let math3 = 12.0098;
+console.log(Math.round(12.0098));
+console.log(Math.pow(2,2));
+
+console.log(Math.min(2,20,4));
+console.log(Math.max(2,540,907));
+console.log(Math.trunc(12.091));
+console.log(Math.abs(-2));
+console.log(Math.sqrt(2));
+console.log(Math.cbrt(2,2));
+console.log(math1.toFixed(12.09));
+
+//basicvariable example;
+//basic condition
+//baisc operator
+
+//basic unary operator
+
+let array  = [12,13,15,20,17,19];
+console.log(Math.max(...array));
+// //2nd method
+let max = array[0];
+for (let value of array){
+  if(value>max){
+    max = value;
+ }
+}
+console.log(max);
+
+//🟢 Super Easy
+
+// Print a number
+let ab = 12;
+console.log(ab);
+
+// Print sum of two numbers
+let abc = 43
+let cb = 43;
+console.log(abc+cb);
+// Swap two variables
+let bv= 34;
+let da = 54;
+let ac = bv;
+bv = da;
+da = ac;
+console.log(bv,da);
+
+
+// Check number is positive
+for(let i = -1; i<=10; i++){
+  if(i>=0){
+    console.log(i,"this is positive");
+  }
+  else{
+    console.log(i,"this is negative");
+  }
+}
+
+// Check number is negative
+for(let i = -10; i<=10; i++){
+  if(i<=0){
+    console.log(i,"this is ngative");
+  }
+  else{
+    console.log(i,"this is positiv");
+  }
+}
+
+// Print even numbers till N
+for(let i=1; i<=10; i++){
+  if(i%2==0){
+    console.log("this is even");
+  }
+  else{
+    console.log("this is odd");
+    
+  }
+}
+// Print odd numbers till N
+for(let i=1; i<=10; i++){
+  if(i%2==1){
+    console.log("this is odd");
+  }
+  else{
+    console.log("this is even");
+    
+  }
+}
+
+
+// Convert string to number
+let co = prompt("enter the string to convert numeber");
+console.log(Number(co));
+
+// Add two user inputs
+let first  = Number(prompt("this is first"));
+let second = Number(prompt("this is second"));
+let third = first+second;
+console.log(third);
+
+
+// Find square of a number
+let sq = Number(prompt("this is entry"));
+console.log((sq*2));
+
+
+
+
