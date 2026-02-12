@@ -2278,7 +2278,7 @@ console.log(max);
 //🟢 Super Easy
 
 // Print a number
-let ab = 12;
+let ab = 92;
 console.log(ab);
 
 // Print sum of two numbers
@@ -2295,7 +2295,7 @@ console.log(bv,da);
 
 
 // Check number is positive
-for(let i = -1; i<=10; i++){
+for(let i = -1; i<=4; i++){
   if(i>=0){
     console.log(i,"this is positive");
   }
@@ -2305,7 +2305,7 @@ for(let i = -1; i<=10; i++){
 }
 
 // Check number is negative
-for(let i = -10; i<=10; i++){
+for(let i = -5; i<=2; i++){
   if(i<=0){
     console.log(i,"this is ngative");
   }
@@ -2349,8 +2349,62 @@ console.log(third);
 
 // Find square of a number
 let sq = Number(prompt("this is entry"));
-console.log((sq*2));
+console.log((sq*sq));
 
 
 
 
+// 🟡 Easy
+
+// Check number is even or odd
+for(let i =0;mi<=10; i++){
+  if(i%2==0){
+    console.log("this si even", i);
+  }
+  else{
+    console.log("this is odd", i);
+    
+  }
+}
+
+
+// Find maximum of two numbers
+let arr =10;
+let arr4 = 12;
+console.log(Math.max(arr,arr4));
+// Find minimum of two numbers
+let ar3=10;
+let arr5 = 12;
+console.log(Math.min(arr,arr5))
+// Simple calculator
+
+
+// Check valid number using isNaN
+let valid = Number(prompt("enter a valid number"));
+if(isNaN()){
+ console.log("this is invalid");
+ 
+}
+else if(valid>=10){
+  console.log("this is valid upto 10");
+}
+else{
+  console.log("this is valid below10")
+}
+
+// Convert Celsius to Fahrenheit
+
+// Area of rectangle
+let ar =10;
+let as = 10;
+let br = 20;
+let bs = 20;
+let all1 = ar+as;
+let all2 = br+bs;
+console.log(all1+all2);
+
+// Area of circle
+
+// Perimeter of square
+
+// Simple interest
