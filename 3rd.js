@@ -5,6 +5,7 @@
 // // first.insertAdjacentHTML("beforeend",'<div class="text">beforeend</div>');
 // // first.insertAdjacentHTML("afterend",'<div class="text">afterend</div>');
 
+
 // // console.log(first.class = "red");
 // // console.log(first.classList);
 // // console.log(first.classList.toggle("red"));
@@ -2357,7 +2358,7 @@ console.log((sq*sq));
 // 🟡 Easy
 
 // Check number is even or odd
-for(let i =0;mi<=10; i++){
+for(let i =0;i<=10; i++){
   if(i%2==0){
     console.log("this si even", i);
   }
@@ -2381,7 +2382,7 @@ console.log(Math.min(arr,arr5))
 
 // Check valid number using isNaN
 let valid = Number(prompt("enter a valid number"));
-if(isNaN()){
+if(isNaN(valid)){
  console.log("this is invalid");
  
 }
@@ -2393,18 +2394,75 @@ else{
 }
 
 // Convert Celsius to Fahrenheit
+let C  =0;
+let F = (C*9/5)+32;
+console.log(F);
+
 
 // Area of rectangle
-let ar =10;
-let as = 10;
-let br = 20;
-let bs = 20;
-let all1 = ar+as;
-let all2 = br+bs;
-console.log(all1+all2);
+let length = 10;
+let width = 20;
+console.log(length*width);
 
 // Area of circle
-
+let pi = 3.14;
+let r = 45;
+console.log(pi*r**2);
 // Perimeter of square
+let all_side = 34;
+console.log(all_side*4);
+
 
 // Simple interest
+let p = 1200;
+let R = 10;
+let T = 4;
+let result = p*R*T;
+console.log(result/100);
+
+// Check leap year
+
+// Largest of three numbers
+
+// Sum of digits
+let  sum_number = Number(prompt("enter your sum number"));
+if(isNaN(sum_number)){
+  console.log("enter the correct number");
+
+}
+else{
+  let sum = 0;
+  for(let i=1; i<=sum_number; i++){
+    sum = sum+i;
+  };
+  console.log("this is sum", sum);
+}
+
+// Reverse a nuwmber
+
+// Count digits
+
+// Check number is palindrome
+
+// Factorial of a number
+let pr = Number(prompt("enter your prompt number factorial"));
+if(isNaN(pr)){
+console.log("this is empty ");
+}
+else {
+  let fact = 1;
+  for(let i=1; i<=pr; i++){
+     fact = fact*i;
+  }
+  console.log(fact, pr);
+};
+
+// Power of a number
+let base = Number(prompt("enter your base"));
+let exp = Number(prompt("enter your exp"));
+console.log(base**exp);
+console.log(Math.pow(base, exp));
+
+// Prime number check
+
+// Print first N primes
