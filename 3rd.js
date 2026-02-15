@@ -2466,3 +2466,81 @@ console.log(Math.pow(base, exp));
 // Prime number check
 
 // Print first N primes
+
+
+let APi = fetch("https://jsonplaceholder.typicode.com/users");
+APi.then((Api)=>{
+return Api.json()
+}).then((Api)=>{
+  console.log(Api);
+}).catch((err)=>{
+  console.log(err);
+});
+
+let loc = prompt("this is cookie");
+let loca  =prompt("thsi si 2n d cookies");
+localStorage.setItem(loc, loca);
+console.log(localStorage.getItem(loc, loca));
+
+let locc = prompt("this is ");
+let locb  =prompt("thsi si 2n");
+sessionStorage.setItem(locc, locb);
+console.log(sessionStorage.getItem(locc));
+
+
+let key  = "th@!$#@";
+let value = "this $#@! encode";
+document.cookie = encodeURIComponent(value)+encodeURIComponent(key);
+console.log(document.cookie);
+
+// 🔹 Task 4
+
+// Ask user:
+
+// Key
+
+// Value
+
+// 👉 Store it in localStorage
+// 👉 Then print stored value in console.
+
+let key1  = prompt("enter your key");
+let value2 = prompt("enter your value");
+localStorage.setItem(key1, value2);
+localStorage.getItem(key);
+console.log(localStorage.getItem(key));
+
+// Store an array:
+
+// ["HTML", "CSS", "JavaScript"]
+
+
+// 👉 Save it in localStorage
+// 👉 Retrieve it
+// 👉 Convert back to array
+// 👉 Print it
+
+let arrt  = ["this is array"];
+localStorage.setItem("skill",JSON.stringify(arrt));///string
+let data = (localStorage.getItem("skill")); //retrieve
+let backToarray = JSON.parse(data);
+
+console.log(backToarray);
+console.log(Array.isArray(backToarray)); // true
+
+
+// 🔹 Task 6
+
+// Create a variable:
+
+// theme = "dark"
+
+
+// 👉 Save it in localStorage
+// 👉 On page reload, print theme in console.
+
+let theme  = "dark";
+localStorage.setItem("theme", theme);
+console.log(localStorage.getItem(theme));
+
+
