@@ -2543,4 +2543,56 @@ let theme  = "dark";
 localStorage.setItem("theme", theme);
 console.log(localStorage.getItem(theme));
 
+let p12 = new Promise((resolve,reject)=>{
+  console.log("this is promise fullfilled");
+
+  setTimeout(()=>{
+    resolve(true);
+    console.log("this is true");
+  },2000);
+})
+console.log(p12);
+
+
+//up to
+// for(let i=1; i++;){
+//   console.log(i);
+// }
+//below to
+// for(let i=200; i>99; i--){
+//    console.log(i);
+// }
+
+
+let n = Number(prompt("enter your choice number for sum"));
+if(isNaN(n)){
+  console.log("this is invalid");
+}
+else{
+  if(n>0){
+  let isprime = true;
+  for(let i =1; i<=Math.floor(n/2); i++){
+    if(n%i===0){
+      isprime  = false;
+      break;
+      console.log(i);
+    }
+   
+  }
+  console.log(n, isprime ,"ok you positive");
+  
+}
+else{
+  console.log("should be positive and morethan 0");
+}
+}
+//console.log(10+9+8+7+6+5+4+3+2+1);
+let ap = prompt("enter your prompt until they give exit");
+while(ap!=="exit"){
+  ap = prompt("enter your prompt until they give exit");
+  
+
+}
+
+
 
