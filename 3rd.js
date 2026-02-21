@@ -2594,5 +2594,105 @@ while(ap!=="exit"){
 
 }
 
+//0 to natural number
+for(let i=0; i<=10; i++){
+     console.log(i);
+}
+//sum of natural number
+let sum = 0;
+for(let i=0; i<=10; i++){
+  sum = sum+i;
+  console.log(sum);
+}
+
+//factorial
+let fact = 1;
+for(let i=1; i<=5; i++){
+    fact = fact*i;
+    console.log(i);
+}
+console.log(fact);
+
+//prime
+let pro = prompt(("enter your choice number to check the prime"));
+let prime = true;
+if(pro<=1){
+  prime= false;
+}
+else{
+for(let i=2; i<=Math.floor(pro/2); i++){
+  if(pro%i===0){
+    prime = false;
+   
+    }
+  }
+}
+if(prime){
+  console.log("this is prime");
+}
+     
+  else{
+    console.log("this is not prime");
+  }
 
 
+
+
+
+
+
+
+let prop = prompt("enter your prop");
+let prime1=  true;
+if(prop<=1){
+  prime1 = false;
+}
+else{
+  for(let i=2; i<=Math.floor(i/2); i++){
+    if(prop%2===0){
+      prime1 = true;
+    }
+  }
+}
+if(prime1){
+  console.log("this is prime");
+}
+else{
+  console.log("this is not prime");
+}
+
+let number1 = Number(prompt("enter your number"));
+let som = 0;
+while(number1>0){
+let rem =  number1%10;
+som = som+rem;
+number1 = Math.floor(number1/10);
+
+}
+console.log(som);
+
+
+let pii = Number(prompt("enter yoour number to add in itself"));
+let sUM = 0;
+while(pii>0){
+  let rem = pii%10;
+  sUM  = sUM+ rem;
+  pii = Math.floor(pii/10);
+}
+console.log(pii, sUM);
+
+
+//reverse
+
+
+let reversed = Number(prompt("enter your reversed choice number"));
+
+let reve = 0;
+let suum = 0;
+while(reversed>0){
+  let rem =  reversed%10;
+  reve = reve*10+rem;
+  suum  = suum+rem
+  reversed = Math.floor(reversed/10);
+}
+console.log(reve, suum);
