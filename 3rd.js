@@ -1913,8 +1913,8 @@
 // let reverse = 0;
 
 // while(numbert>0){
-//     let digit = numbert%10;
-//     reverse = reverse *10 + digit;
+//     let itself = numbert%10;
+//     reverse = reverse *10 + itself;
 //     numbert = Math.floor(numbert/10);
 // }
 // console.log(reverse);
@@ -1924,8 +1924,8 @@
 // let number45 = 678;
 // let sum = 0;
 // while(number45>0){
-//   let digit = number45%10;
-//   sum = sum%10+digit;
+//   let itself = number45%10;
+//   sum = sum%10+itself;
 //   number45=  Math.floor(number45/10);
 // }
 // console.log(sum);
@@ -2007,8 +2007,8 @@
 // let numberss = 34456;
 // let reversed = 0;
 // while(numberss>0){
-//     let digit = numberss % 10;
-//     reversed = reversed * 10 + digit;
+//     let itself = numberss % 10;
+//     reversed = reversed * 10 + itself;
 //     numberss = Math.floor(numberss/10);
 
 
@@ -2672,14 +2672,15 @@ number1 = Math.floor(number1/10);
 console.log(som);
 
 
-let pii = Number(prompt("enter yoour number to add in itself"));
+let itself = Number(prompt("enter yoour itself to add in itself"));
+console.log(itself);
 let sUM = 0;
-while(pii>0){
-  let rem = pii%10;
+while(itself>0){
+  let rem = itself%10;
   sUM  = sUM+ rem;
-  pii = Math.floor(pii/10);
+  itself = Math.floor(itself/10);
 }
-console.log(pii, sUM);
+console.log(`the sum of itself to add itself: ${sUM}`, typeof sUM);
 
 
 //reverse
@@ -2695,4 +2696,21 @@ while(reversed>0){
   suum  = suum+rem
   reversed = Math.floor(reversed/10);
 }
-console.log(reve, suum);
+console.log( reve, suum);
+// condition question
+let amount =Number(prompt("enter your amount payabble and then pay according your discount"));
+if(amount>0 && amount<=5000){
+  console.log(amount ,"zero discount");
+}
+else if(amount>5000 && amount<=7000){
+console.log(5*amount/100);
+}
+else if(amount>7000 && amount<=9000){
+console.log(10*amount/100);
+}
+else if(amount>9000){
+  console.log(20*amount/100);
+}
+else{
+  console.log("this is invalid");
+}
