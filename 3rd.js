@@ -2172,545 +2172,575 @@
 // document.cookie = 'erf=${erf}';
 // alert(document.cookie);
 
-let a = 12;
-console.log(a);
+// let a = 12;
+// console.log(a);
 
 
-let b = 12;
-let c = "a string";
-console.log(b+c);
+// let b = 12;
+// let c = "a string";
+// console.log(b+c);
 
-let d = 23;
-let e = "this is string";
-console.log(d-e);
+// let d = 23;
+// let e = "this is string";
+// console.log(d-e);
 
-let f = 43;
-let g = "this is ";
-console.log(f*g,f/g);
-
-
-let i = 33;
-let j  = "1";
-console.log(i+j);
-console.log(i-j);
-console.log(i*j);
-console.log(i/j);
+// let f = 43;
+// let g = "this is ";
+// console.log(f*g,f/g);
 
 
-//swap
-
-let a1 = 13;
-
-let b1 = 12;
-//1st method
-a1 = a1+b1;  //25
-b1 = a1-b1;  //13
-a1 = a1-b1;   //12
-console.log(a1,b1);
-console.log(b1);
-
-//2nd method
-let destructoring= [a1,b1] = [b1,a1];
-console.log(destructoring);
-
-//3rd method
-
-let a2 = 23;
-let b2 = 32;
-let c2;
-
- c2 = a2;
- a2 = b2;
- b2 = c2;
- console.log(a2,b2);
-
-//condition 
-
-let age = Number(prompt("enter your age"));
-if(isNaN(age)){
-    console.log("this is invalid input");
-
-}
-else if(age>=18){
-    console.log("this is valid for vote");
-}
-else {
-    console.log("this is not valide for vote");
+// let i = 33;
+// let j  = "1";
+// console.log(i+j);
+// console.log(i-j);
+// console.log(i*j);
+// console.log(i/j);
 
 
-}
+// //swap
 
+// let a1 = 13;
 
-let math1 =  12.09;
-console.log(Math.ceil(12.09));
+// let b1 = 12;
+// //1st method
+// a1 = a1+b1;  //25
+// b1 = a1-b1;  //13
+// a1 = a1-b1;   //12
+// console.log(a1,b1);
+// console.log(b1);
 
-let math2  = 12.009;
-console.log(Math.floor(12.009));
-
-let math3 = 12.0098;
-console.log(Math.round(12.0098));
-console.log(Math.pow(2,2));
-
-console.log(Math.min(2,20,4));
-console.log(Math.max(2,540,907));
-console.log(Math.trunc(12.091));
-console.log(Math.abs(-2));
-console.log(Math.sqrt(2));
-console.log(Math.cbrt(2,2));
-console.log(math1.toFixed(12.09));
-
-//basicvariable example;
-//basic condition
-//baisc operator
-
-//basic unary operator
-
-let array  = [12,13,15,20,17,19];
-console.log(Math.max(...array));
 // //2nd method
-let max = array[0];
-for (let value of array){
-  if(value>max){
-    max = value;
- }
-}
-console.log(max);
+// let destructoring= [a1,b1] = [b1,a1];
+// console.log(destructoring);
 
-//🟢 Super Easy
+// //3rd method
 
-// Print a number
-let ab = 92;
-console.log(ab);
+// let a2 = 23;
+// let b2 = 32;
+// let c2;
 
-// Print sum of two numbers
-let abc = 43
-let cb = 43;
-console.log(abc+cb);
-// Swap two variables
-let bv= 34;
-let da = 54;
-let ac = bv;
-bv = da;
-da = ac;
-console.log(bv,da);
+//  c2 = a2;
+//  a2 = b2;
+//  b2 = c2;
+//  console.log(a2,b2);
+
+// //condition 
+
+// let age = Number(prompt("enter your age"));
+// if(isNaN(age)){
+//     console.log("this is invalid input");
+
+// }
+// else if(age>=18){
+//     console.log("this is valid for vote");
+// }
+// else {
+//     console.log("this is not valide for vote");
 
 
-// Check number is positive
-for(let i = -1; i<=4; i++){
-  if(i>=0){
-    console.log(i,"this is positive");
-  }
-  else{
-    console.log(i,"this is negative");
-  }
-}
+// }
 
-// Check number is negative
-for(let i = -5; i<=2; i++){
-  if(i<=0){
-    console.log(i,"this is ngative");
-  }
-  else{
-    console.log(i,"this is positiv");
-  }
-}
 
-// Print even numbers till N
-for(let i=1; i<=10; i++){
-  if(i%2==0){
-    console.log("this is even");
-  }
-  else{
-    console.log("this is odd");
+// let math1 =  12.09;
+// console.log(Math.ceil(12.09));
+
+// let math2  = 12.009;
+// console.log(Math.floor(12.009));
+
+// let math3 = 12.0098;
+// console.log(Math.round(12.0098));
+// console.log(Math.pow(2,2));
+
+// console.log(Math.min(2,20,4));
+// console.log(Math.max(2,540,907));
+// console.log(Math.trunc(12.091));
+// console.log(Math.abs(-2));
+// console.log(Math.sqrt(2));
+// console.log(Math.cbrt(2,2));
+// console.log(math1.toFixed(12.09));
+
+// //basicvariable example;
+// //basic condition
+// //baisc operator
+
+// //basic unary operator
+
+// let array  = [12,13,15,20,17,19];
+// console.log(Math.max(...array));
+// // //2nd method
+// let max = array[0];
+// for (let value of array){
+//   if(value>max){
+//     max = value;
+//  }
+// }
+// console.log(max);
+
+// //🟢 Super Easy
+
+// // Print a number
+// let ab = 92;
+// console.log(ab);
+
+// // Print sum of two numbers
+// let abc = 43
+// let cb = 43;
+// console.log(abc+cb);
+// // Swap two variables
+// let bv= 34;
+// let da = 54;
+// let ac = bv;
+// bv = da;
+// da = ac;
+// console.log(bv,da);
+
+
+// // Check number is positive
+// for(let i = -1; i<=4; i++){
+//   if(i>=0){
+//     console.log(i,"this is positive");
+//   }
+//   else{
+//     console.log(i,"this is negative");
+//   }
+// }
+
+// // Check number is negative
+// for(let i = -5; i<=2; i++){
+//   if(i<=0){
+//     console.log(i,"this is ngative");
+//   }
+//   else{
+//     console.log(i,"this is positiv");
+//   }
+// }
+
+// // Print even numbers till N
+// for(let i=1; i<=10; i++){
+//   if(i%2==0){
+//     console.log("this is even");
+//   }
+//   else{
+//     console.log("this is odd");
     
-  }
-}
-// Print odd numbers till N
-for(let i=1; i<=10; i++){
-  if(i%2==1){
-    console.log("this is odd");
-  }
-  else{
-    console.log("this is even");
+//   }
+// }
+// // Print odd numbers till N
+// for(let i=1; i<=10; i++){
+//   if(i%2==1){
+//     console.log("this is odd");
+//   }
+//   else{
+//     console.log("this is even");
     
-  }
-}
+//   }
+// }
 
 
-// Convert string to number
-let co = prompt("enter the string to convert numeber");
-console.log(Number(co));
+// // Convert string to number
+// let co = prompt("enter the string to convert numeber");
+// console.log(Number(co));
 
-// Add two user inputs
-let first  = Number(prompt("this is first"));
-let second = Number(prompt("this is second"));
-let third = first+second;
-console.log(third);
-
-
-// Find square of a number
-let sq = Number(prompt("this is entry"));
-console.log((sq*sq));
+// // Add two user inputs
+// let first  = Number(prompt("this is first"));
+// let second = Number(prompt("this is second"));
+// let third = first+second;
+// console.log(third);
 
 
+// // Find square of a number
+// let sq = Number(prompt("this is entry"));
+// console.log((sq*sq));
 
 
-// 🟡 Easy
 
-// Check number is even or odd
-for(let i =0;i<=10; i++){
-  if(i%2==0){
-    console.log("this si even", i);
-  }
-  else{
-    console.log("this is odd", i);
+
+// // 🟡 Easy
+
+// // Check number is even or odd
+// for(let i =0;i<=10; i++){
+//   if(i%2==0){
+//     console.log("this si even", i);
+//   }
+//   else{
+//     console.log("this is odd", i);
     
-  }
-}
+//   }
+// }
 
 
-// Find maximum of two numbers
-let arr =10;
-let arr4 = 12;
-console.log(Math.max(arr,arr4));
-// Find minimum of two numbers
-let ar3=10;
-let arr5 = 12;
-console.log(Math.min(arr,arr5))
-// Simple calculator
+// // Find maximum of two numbers
+// let arr =10;
+// let arr4 = 12;
+// console.log(Math.max(arr,arr4));
+// // Find minimum of two numbers
+// let ar3=10;
+// let arr5 = 12;
+// console.log(Math.min(arr,arr5))
+// // Simple calculator
 
 
-// Check valid number using isNaN
-let valid = Number(prompt("enter a valid number"));
-if(isNaN(valid)){
- console.log("this is invalid");
+// // Check valid number using isNaN
+// let valid = Number(prompt("enter a valid number"));
+// if(isNaN(valid)){
+//  console.log("this is invalid");
  
-}
-else if(valid>=10){
-  console.log("this is valid upto 10");
-}
-else{
-  console.log("this is valid below10")
-}
-
-// Convert Celsius to Fahrenheit
-let C  =0;
-let F = (C*9/5)+32;
-console.log(F);
-
-
-// Area of rectangle
-let length = 10;
-let width = 20;
-console.log(length*width);
-
-// Area of circle
-let pi = 3.14;
-let r = 45;
-console.log(pi*r**2);
-// Perimeter of square
-let all_side = 34;
-console.log(all_side*4);
-
-
-// Simple interest
-let p = 1200;
-let R = 10;
-let T = 4;
-let result = p*R*T;
-console.log(result/100);
-
-// Check leap year
-
-// Largest of three numbers
-
-// Sum of digits
-let  sum_number = Number(prompt("enter your sum number"));
-if(isNaN(sum_number)){
-  console.log("enter the correct number");
-
-}
-else{
-  let sum = 0;
-  for(let i=1; i<=sum_number; i++){
-    sum = sum+i;
-  };
-  console.log("this is sum", sum);
-}
-
-// Reverse a nuwmber
-
-// Count digits
-
-// Check number is palindrome
-
-// Factorial of a number
-let pr = Number(prompt("enter your prompt number factorial"));
-if(isNaN(pr)){
-console.log("this is empty ");
-}
-else {
-  let fact = 1;
-  for(let i=1; i<=pr; i++){
-     fact = fact*i;
-  }
-  console.log(fact, pr);
-};
-
-// Power of a number
-let base = Number(prompt("enter your base"));
-let exp = Number(prompt("enter your exp"));
-console.log(base**exp);
-console.log(Math.pow(base, exp));
-
-// Prime number check
-
-// Print first N primes
-
-
-let APi = fetch("https://jsonplaceholder.typicode.com/users");
-APi.then((Api)=>{
-return Api.json()
-}).then((Api)=>{
-  console.log(Api);
-}).catch((err)=>{
-  console.log(err);
-});
-
-let loc = prompt("this is cookie");
-let loca  =prompt("thsi si 2n d cookies");
-localStorage.setItem(loc, loca);
-console.log(localStorage.getItem(loc, loca));
-
-let locc = prompt("this is ");
-let locb  =prompt("thsi si 2n");
-sessionStorage.setItem(locc, locb);
-console.log(sessionStorage.getItem(locc));
-
-
-let key  = "th@!$#@";
-let value = "this $#@! encode";
-document.cookie = encodeURIComponent(value)+encodeURIComponent(key);
-console.log(document.cookie);
-
-// 🔹 Task 4
-
-// Ask user:
-
-// Key
-
-// Value
-
-// 👉 Store it in localStorage
-// 👉 Then print stored value in console.
-
-let key1  = prompt("enter your key");
-let value2 = prompt("enter your value");
-localStorage.setItem(key1, value2);
-localStorage.getItem(key);
-console.log(localStorage.getItem(key));
-
-// Store an array:
-
-// ["HTML", "CSS", "JavaScript"]
-
-
-// 👉 Save it in localStorage
-// 👉 Retrieve it
-// 👉 Convert back to array
-// 👉 Print it
-
-let arrt  = ["this is array"];
-localStorage.setItem("skill",JSON.stringify(arrt));///string
-let data = (localStorage.getItem("skill")); //retrieve
-let backToarray = JSON.parse(data);
-
-console.log(backToarray);
-console.log(Array.isArray(backToarray)); // true
-
-
-// 🔹 Task 6
-
-// Create a variable:
-
-// theme = "dark"
-
-
-// 👉 Save it in localStorage
-// 👉 On page reload, print theme in console.
-
-let theme  = "dark";
-localStorage.setItem("theme", theme);
-console.log(localStorage.getItem(theme));
-
-let p12 = new Promise((resolve,reject)=>{
-  console.log("this is promise fullfilled");
-
-  setTimeout(()=>{
-    resolve(true);
-    console.log("this is true");
-  },2000);
-})
-console.log(p12);
-
-
-//up to
-// for(let i=1; i++;){
-//   console.log(i);
 // }
-//below to
-// for(let i=200; i>99; i--){
-//    console.log(i);
+// else if(valid>=10){
+//   console.log("this is valid upto 10");
+// }
+// else{
+//   console.log("this is valid below10")
 // }
 
+// // Convert Celsius to Fahrenheit
+// let C  =0;
+// let F = (C*9/5)+32;
+// console.log(F);
 
-let n = Number(prompt("enter your choice number for sum"));
-if(isNaN(n)){
-  console.log("this is invalid");
-}
-else{
-  if(n>0){
-  let isprime = true;
-  for(let i =1; i<=Math.floor(n/2); i++){
-    if(n%i===0){
-      isprime  = false;
-      break;
-      console.log(i);
-    }
+
+// // Area of rectangle
+// let length = 10;
+// let width = 20;
+// console.log(length*width);
+
+// // Area of circle
+// let pi = 3.14;
+// let r = 45;
+// console.log(pi*r**2);
+// // Perimeter of square
+// let all_side = 34;
+// console.log(all_side*4);
+
+
+// // Simple interest
+// let p = 1200;
+// let R = 10;
+// let T = 4;
+// let result = p*R*T;
+// console.log(result/100);
+
+// // Check leap year
+
+// // Largest of three numbers
+
+// // Sum of digits
+// let  sum_number = Number(prompt("enter your sum number"));
+// if(isNaN(sum_number)){
+//   console.log("enter the correct number");
+
+// }
+// else{
+//   let sum = 0;
+//   for(let i=1; i<=sum_number; i++){
+//     sum = sum+i;
+//   };
+//   console.log("this is sum", sum);
+// }
+
+// // Reverse a nuwmber
+
+// // Count digits
+
+// // Check number is palindrome
+
+// // Factorial of a number
+// let pr = Number(prompt("enter your prompt number factorial"));
+// if(isNaN(pr)){
+// console.log("this is empty ");
+// }
+// else {
+//   let fact = 1;
+//   for(let i=1; i<=pr; i++){
+//      fact = fact*i;
+//   }
+//   console.log(fact, pr);
+// };
+
+// // Power of a number
+// let base = Number(prompt("enter your base"));
+// let exp = Number(prompt("enter your exp"));
+// console.log(base**exp);
+// console.log(Math.pow(base, exp));
+
+// // Prime number check
+
+// // Print first N primes
+
+
+// let APi = fetch("https://jsonplaceholder.typicode.com/users");
+// APi.then((Api)=>{
+// return Api.json()
+// }).then((Api)=>{
+//   console.log(Api);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+// let loc = prompt("this is cookie");
+// let loca  =prompt("thsi si 2n d cookies");
+// localStorage.setItem(loc, loca);
+// console.log(localStorage.getItem(loc, loca));
+
+// let locc = prompt("this is ");
+// let locb  =prompt("thsi si 2n");
+// sessionStorage.setItem(locc, locb);
+// console.log(sessionStorage.getItem(locc));
+
+
+// let key  = "th@!$#@";
+// let value = "this $#@! encode";
+// document.cookie = encodeURIComponent(value)+encodeURIComponent(key);
+// console.log(document.cookie);
+
+// // 🔹 Task 4
+
+// // Ask user:
+
+// // Key
+
+// // Value
+
+// // 👉 Store it in localStorage
+// // 👉 Then print stored value in console.
+
+// let key1  = prompt("enter your key");
+// let value2 = prompt("enter your value");
+// localStorage.setItem(key1, value2);
+// localStorage.getItem(key);
+// console.log(localStorage.getItem(key));
+
+// // Store an array:
+
+// // ["HTML", "CSS", "JavaScript"]
+
+
+// // 👉 Save it in localStorage
+// // 👉 Retrieve it
+// // 👉 Convert back to array
+// // 👉 Print it
+
+// let arrt  = ["this is array"];
+// localStorage.setItem("skill",JSON.stringify(arrt));///string
+// let data = (localStorage.getItem("skill")); //retrieve
+// let backToarray = JSON.parse(data);
+
+// console.log(backToarray);
+// console.log(Array.isArray(backToarray)); // true
+
+
+// // 🔹 Task 6
+
+// // Create a variable:
+
+// // theme = "dark"
+
+
+// // 👉 Save it in localStorage
+// // 👉 On page reload, print theme in console.
+
+// let theme  = "dark";
+// localStorage.setItem("theme", theme);
+// console.log(localStorage.getItem(theme));
+
+// let p12 = new Promise((resolve,reject)=>{
+//   console.log("this is promise fullfilled");
+
+//   setTimeout(()=>{
+//     resolve(true);
+//     console.log("this is true");
+//   },2000);
+// })
+// console.log(p12);
+
+
+// //up to
+// // for(let i=1; i++;){
+// //   console.log(i);
+// // }
+// //below to
+// // for(let i=200; i>99; i--){
+// //    console.log(i);
+// // }
+
+
+// let n = Number(prompt("enter your choice number for sum"));
+// if(isNaN(n)){
+//   console.log("this is invalid");
+// }
+// else{
+//   if(n>0){
+//   let isprime = true;
+//   for(let i =1; i<=Math.floor(n/2); i++){
+//     if(n%i===0){
+//       isprime  = false;
+//       break;
+//       console.log(i);
+//     }
    
-  }
-  console.log(n, isprime ,"ok you positive");
+//   }
+//   console.log(n, isprime ,"ok you positive");
   
-}
-else{
-  console.log("should be positive and morethan 0");
-}
-}
-//console.log(10+9+8+7+6+5+4+3+2+1);
-let ap = prompt("enter your prompt until they give exit");
-while(ap!=="exit"){
-  ap = prompt("enter your prompt until they give exit");
+// }
+// else{
+//   console.log("should be positive and morethan 0");
+// }
+// }
+// //console.log(10+9+8+7+6+5+4+3+2+1);
+// let ap = prompt("enter your prompt until they give exit");
+// while(ap!=="exit"){
+//   ap = prompt("enter your prompt until they give exit");
   
 
-}
+// }
 
-//0 to natural number
-for(let i=0; i<=10; i++){
-     console.log(i);
-}
-//sum of natural number
-let sum = 0;
-for(let i=0; i<=10; i++){
-  sum = sum+i;
-  console.log(sum);
-}
+// //0 to natural number
+// for(let i=0; i<=10; i++){
+//      console.log(i);
+// }
+// //sum of natural number
+// let sum = 0;
+// for(let i=0; i<=10; i++){
+//   sum = sum+i;
+//   console.log(sum);
+// }
 
-//factorial
-let fact = 1;
-for(let i=1; i<=5; i++){
-    fact = fact*i;
-    console.log(i);
-}
-console.log(fact);
+// //factorial
+// let fact = 1;
+// for(let i=1; i<=5; i++){
+//     fact = fact*i;
+//     console.log(i);
+// }
+// console.log(fact);
 
-//prime
-let pro = prompt(("enter your choice number to check the prime"));
-let prime = true;
-if(pro<=1){
-  prime= false;
-}
-else{
-for(let i=2; i<=Math.floor(pro/2); i++){
-  if(pro%i===0){
-    prime = false;
+// //prime
+// let pro = prompt(("enter your choice number to check the prime"));
+// let prime = true;
+// if(pro<=1){
+//   prime= false;
+// }
+// else{
+// for(let i=2; i<=Math.floor(pro/2); i++){
+//   if(pro%i===0){
+//     prime = false;
    
-    }
-  }
-}
-if(prime){
-  console.log("this is prime");
-}
+//     }
+//   }
+// }
+// if(prime){
+//   console.log("this is prime");
+// }
      
-  else{
-    console.log("this is not prime");
+//   else{
+//     console.log("this is not prime");
+//   }
+
+
+
+
+
+
+
+
+// let prop = prompt("enter your prop");
+// let prime1=  true;
+// if(prop<=1){
+//   prime1 = false;
+// }
+// else{
+//   for(let i=2; i<=Math.floor(i/2); i++){
+//     if(prop%2===0){
+//       prime1 = true;
+//     }
+//   }
+// }
+// if(prime1){
+//   console.log("this is prime");
+// }
+// else{
+//   console.log("this is not prime");
+// }
+
+// let number1 = Number(prompt("enter your number"));
+// let som = 0;
+// while(number1>0){
+// let rem =  number1%10;
+// som = som+rem;
+// number1 = Math.floor(number1/10);
+
+// }
+// console.log(som);
+
+
+// let itself = Number(prompt("enter yoour itself to add in itself"));
+// console.log(itself);
+// let sUM = 0;
+// while(itself>0){
+//   let rem = itself%10;
+//   sUM  = sUM+ rem;
+//   itself = Math.floor(itself/10);
+// }
+// console.log(`the sum of itself to add itself: ${sUM}`, typeof sUM);
+
+
+// //reverse
+
+
+// let reversed = Number(prompt("enter your reversed choice number"));
+
+// let reve = 0;
+// let suum = 0;
+// while(reversed>0){
+//   let rem =  reversed%10;
+//   reve = reve*10+rem;
+//   suum  = suum+rem
+//   reversed = Math.floor(reversed/10);
+// }
+// console.log( reve, suum);
+// // condition question
+// let amount =Number(prompt("enter your amount payabble and then pay according your discount"));
+// if(amount>0 && amount<=5000){
+//   console.log(amount ,"zero discount");
+// }
+// else if(amount>5000 && amount<=7000){
+// console.log(5*amount/100);
+// }
+// else if(amount>7000 && amount<=9000){
+// console.log(10*amount/100);
+// }
+// else if(amount>9000){
+//   console.log(20*amount/100);
+// }
+// else{
+//   console.log("this is invalid");
+// }
+// process.stdout.write("hello ")
+// process.stdout.write("world")
+// for(let i=1; i<=10; i++){
+//   console.log("*",);
+// }
+
+
+
+let prompt = require('prompt-sync')();
+let a = prompt("enter your data  :");
+for(let i=1; i<=a; i++){
+  for(let j=1; j<=i; j++){
+    process.stdout.write(j.toString());
+    
+  
+   
   }
-
-
-
-
-
-
-
-
-let prop = prompt("enter your prop");
-let prime1=  true;
-if(prop<=1){
-  prime1 = false;
+  console.log();
 }
-else{
-  for(let i=2; i<=Math.floor(i/2); i++){
-    if(prop%2===0){
-      prime1 = true;
-    }
+let qw  = require('prompt-sync')();
+let b  =prompt("enter  your ascii");
+
+for(let i = 1; i<=b; i++){
+  let ascii = 65;
+  for(let j=1; j<=i; j++){
+   process.stdout.write(String.fromCharCode(ascii+""));
+   ascii+2;
   }
-}
-if(prime1){
-  console.log("this is prime");
-}
-else{
-  console.log("this is not prime");
-}
-
-let number1 = Number(prompt("enter your number"));
-let som = 0;
-while(number1>0){
-let rem =  number1%10;
-som = som+rem;
-number1 = Math.floor(number1/10);
-
-}
-console.log(som);
-
-
-let itself = Number(prompt("enter yoour itself to add in itself"));
-console.log(itself);
-let sUM = 0;
-while(itself>0){
-  let rem = itself%10;
-  sUM  = sUM+ rem;
-  itself = Math.floor(itself/10);
-}
-console.log(`the sum of itself to add itself: ${sUM}`, typeof sUM);
-
-
-//reverse
-
-
-let reversed = Number(prompt("enter your reversed choice number"));
-
-let reve = 0;
-let suum = 0;
-while(reversed>0){
-  let rem =  reversed%10;
-  reve = reve*10+rem;
-  suum  = suum+rem
-  reversed = Math.floor(reversed/10);
-}
-console.log( reve, suum);
-// condition question
-let amount =Number(prompt("enter your amount payabble and then pay according your discount"));
-if(amount>0 && amount<=5000){
-  console.log(amount ,"zero discount");
-}
-else if(amount>5000 && amount<=7000){
-console.log(5*amount/100);
-}
-else if(amount>7000 && amount<=9000){
-console.log(10*amount/100);
-}
-else if(amount>9000){
-  console.log(20*amount/100);
-}
-else{
-  console.log("this is invalid");
+  console.log();
 }
